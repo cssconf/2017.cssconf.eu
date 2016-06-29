@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+body {
+  font-family: fantasy;
+  margin: 1.5rem;
+}
+h1 {
+  font-size: 1.25rem;
+}
+a,
+a:visited,
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
