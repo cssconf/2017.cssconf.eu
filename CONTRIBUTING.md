@@ -41,7 +41,7 @@ The right place to tell us about a bug you found is our [Github Issue Tracker][]
 
 Everyone collaborating on the projects for cssconf.eu has to adhere to our [Code of Conduct][].
 
-In the shortest possible form: Please do your best to make CSSconf EU and working its related projects a positive experience for everyone.
+In the shortest possible form: Please do your best to make CSSconf EU and working on its related projects a positive experience for everyone.
 
 [Code of Conduct]: http://2015.cssconf.eu/code-of-conduct/
 [Github Issue Tracker]: https://github.com/cssconf/2017.cssconf.eu/issues
