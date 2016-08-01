@@ -18,9 +18,9 @@ With that out of the way, a technical documentation of the project and the steps
 
 ## Finding Something To Do
 
-Our team members coordinate the work to be done using a shared trello-board, but tasks related to the website will also be reflected in our [github issues][github issue-tracker].
+Our team members coordinate the tasks that we need help with in our [Github Issue Tracker][].
 
-When you want to start contributing, you should look at the tasks we [labeled as 'starter issue'][starter-issues]. Those are the tasks we considered a good way to get into the codebase and start contributing.
+When you want to start contributing, you should look at the tasks we labeled as [Starter Issues][]. Those are the tasks we considered a good way to get into the codebase and start contributing.
 
 
 ## The Contribution Process
@@ -34,12 +34,12 @@ After the review is finished, the changes are merged into the master branch, at 
 
 ## Reporting Bugs
 
-The right place to tell us about a bug you found is our [github issue-tracker][https://github.com/cssconf/2017.cssconf.eu/issues]. Please make sure to be as precise as possible and include all relevant information for us to find the problem.
+The right place to tell us about a bug you found is our [Github Issue Tracker][]. Please make sure to be as precise as possible and include all relevant information for us to find the problem.
 
 
 ## Code of Conduct
 
-Everyone collaborating on the projects for cssconf.eu has to adhere to our [Code of conduct][http://2015.cssconf.eu/code-of-conduct/].
+Everyone collaborating on the projects for cssconf.eu has to adhere to our [Code of Conduct][].
 
 In the shortest possible form: Please do your best to make CSSconf EU and working its related projects a positive experience for everyone.
 
