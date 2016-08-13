@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign speaker = page %}
+
+<article class="speaker">
+  <div class="speaker__info">
+    {% include responsive-image
+         path="/assets/images/speakers"
+         basename=speaker.speaker_id
+         srcset="small.jpg 1x, medium.jpg 2x" %}
+    <h1 class="speaker__name">{{ speaker.name }}</h1>
+    <div class="speaker__bio">
+      {{ speaker.bio | newline_to_br }}
+    </div>
+    <ul class="speaker__link-list">
+      {% for link in speaker.links %}
+        <a class="speaker__link" href="{{ link.url }}">{{ link.text }}</a>
+      {% endfor %}
+    </ul>
+  </div>
+  {% assign talk = site.talks | where: "speaker_id", speaker.speaker_id | first%}
+  <section class="speaker__talk talk">
+    <h1 class="talk__title">{{ talk.title }}</h1>
+    <div class="talk__summary">
+      {{ talk.summary | newline_to_br }}
+    </div>
+  </section>
+</article>

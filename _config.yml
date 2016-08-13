@@ -13,3 +13,20 @@ url: "http://2017.cssconf.eu" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+collections:
+  speakers:
+    # Represents whether to generate pages for the collection items
+    output: true
+  talks:
+    output: false
+  sponsors:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+        

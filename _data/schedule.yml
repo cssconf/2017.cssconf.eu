@@ -1,0 +1,7 @@
+- type: "registration"
+  start_time: "08:00"
+  end_time: "10:00"
+- type: "talk"
+  talk_id: "scarlet-css-dress"
+  start_time: "10:00"
+  end_time: "11:45"

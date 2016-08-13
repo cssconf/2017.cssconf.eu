@@ -1,0 +1,12 @@
+---
+layout: default
+page_id: speakers
+title: "Our Wonderful Speakers"
+---
+<ul class="speaker-list">
+  {% for speaker in site.speakers %}
+    <li>
+      <a href="{{ speaker.url | prepend: site.basename }}">{{ speaker.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
