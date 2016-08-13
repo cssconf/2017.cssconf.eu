@@ -6,7 +6,7 @@ title: "Our Wonderful Speakers"
 <ul class="speaker-list">
   {% for speaker in site.speakers %}
     <li>
-      <a href="{{ speaker.url | prepend: site.basename }}">{{ speaker.name }}</a>
+      <a href="{{ speaker.url | prepend: site.baseurl }}">{{ speaker.name }}</a>
     </li>
   {% endfor %}
 </ul>
