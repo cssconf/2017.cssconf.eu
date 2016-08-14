@@ -1,0 +1,8 @@
+<ul>
+  {% for pageId in site.data.main_nav %}
+    {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
+    <li>
+      <a href="{{ linkedPage.url | prepend: site.baseurl }}">{{ pageId | capitalize }}</a>
+    </li>
+  {% endfor %}
+</ul>

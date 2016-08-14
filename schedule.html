@@ -1,0 +1,19 @@
+---
+layout: default
+page_id: schedule
+title: "CSSconf EU 2017 Schedule"
+---
+
+<ul>
+  {% for slot in site.data.schedule %}
+    <li>
+      {% if slot.type == "talk" %}
+        {% assign talk = site.talks | where: "talk_id", slot.talk_id | first %}
+        {% assign speaker = site.speakers | where: "speaker_id", talk.speaker_id | first %}
+        <a href="{{ speaker.url | prepend: site.baseurl }}">{{ talk.title }}</a>
+      {% else %}
+        <span>{{ slot.type | capitalize }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+</ul>
