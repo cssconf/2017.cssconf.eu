@@ -12,7 +12,7 @@
 </head>
 <body>
   {% comment %} Hide nav on home page for now {% endcomment %}
-  {% unless page.url == "/" %}
+  {% unless page.url == "/" or page.url == "" %}
     {% include main-nav.html %}
   {% endunless %}
 
