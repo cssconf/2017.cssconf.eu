@@ -54,6 +54,7 @@ Please navigate to it in order to continue the set up.
 
 * Ruby (2.0.0)
 * Ruby gems
+* NodeJS
 
 ## Installing dependencies
 
@@ -90,18 +91,28 @@ Now, you can install all of the gems by running the following:
 bundle install
 ```
 
+### NodeJS
+
+Follow the installation instructions on [nodejs.org](https://nodejs.org)
+
+Once you install Node, run `npm install`
+
 # Development
 
-Once all of the installation steps are completed, please run the following in the project's main folder:
-```bash
-jekyll serve
-```
+Run a dev server with `npm start`
 
-This will start the local server and will re-generate the page whenever you make any changes to the files (CSS, JS, Markdown, etc.).
-The site is available at <http://localhost:4000>.
+Some assets, including most all CSS, are located in a separate repo (2017-assets) and loaded as a dependency. That means if you need to make CSS changes you’ll need to make your edits there.
 
-Web assets (CSS, JS, images, etc) are located in `/assets`. Edit those for now, but they'll be moved to `/_assets` once
-we have a build step.
+To avoid reinstalling dependencies every time you make a CSS change, you can
+use `npm link` to always grab the latest CSS from your local clone. Just clone the 2017-assets repo somewhere and from the `2017.cssconf.eu` folder, run `npm link ../path/to/2017-assets`. You should only need to do this once.
+
+*Note*: If you use `npm link` you may start seeing a bunch of warnings whenever you run `npm install`. Seems to be a bug in NPM? Don’t worry about it!
+
+The site is built using Jekyll
+
+Front end assets like CSS, JS, etc, are built locally using Gulp. The build
+artifacts are then committed to git and Jekyll handles the rest. Asset sources
+can be found in `_assets/` and will be built into `assets/`
 
 # Deployment (publishing a new version of the website)
 
