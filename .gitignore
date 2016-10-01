@@ -4,3 +4,4 @@ _site/
 .sass-cache/
 .dir-locals.el
 *~
+node_modules/
