@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/verpixelt/2017-cssconfeu-sponsorship#readme",
   "devDependencies": {
-    "2017-assets": "git@github.com:cssconf/2017-assets.git#1.1.3",
+    "2017-assets": "git@github.com:cssconf/2017-assets.git#1.1.4",
     "autoprefixer": "^6.3.6",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
