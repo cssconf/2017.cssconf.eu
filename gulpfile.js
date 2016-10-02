@@ -110,6 +110,9 @@ gulp.task('svg:sprite', function () {
       // when we smash everything together as a sprite
       var prefix = path.basename(file.relative, path.extname(file.relative));
       return {
+        js2svg: {
+          pretty: true
+        },
         plugins: [{
           cleanupIDs: {
             prefix: prefix + '-',

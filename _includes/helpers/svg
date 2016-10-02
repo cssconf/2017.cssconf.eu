@@ -1,3 +1,8 @@
-<svg viewBox="0 0 16 16" class="svg svg-{{ include.id }}">
+<svg
+  viewBox="{% if include.viewbox %}{{ include.viewbox }}{% else %}0 0 16 16{% endif %}"
+  class="svg svg-{{ include.id }}">
+  {% if include.title %}
+    <title id="title-{{ include.id }}">{{ include.title }}</title>
+  {% endif %}
   <use xlink:href="#{{ include.id }}"></use>
 </svg>
