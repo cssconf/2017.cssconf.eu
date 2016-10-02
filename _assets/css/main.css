@@ -1,1 +1,13 @@
 @import '2017-assets';
+
+/* sticky footer */
+
+.sticky-footer-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.sticky-footer-container__content {
+  flex: 1;
+}

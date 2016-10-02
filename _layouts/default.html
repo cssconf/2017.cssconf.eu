@@ -10,7 +10,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
-<body>
+<body class="sticky-footer-container">
   {% comment %} Hide nav on home page for now {% endcomment %}
   {% unless page.url == "/" or page.url == "" %}
     {% include main-nav.html %}
