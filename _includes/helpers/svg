@@ -1,0 +1,3 @@
+<svg viewBox="0 0 16 16" class="svg svg-{{ include.id }}">
+  <use xlink:href="#{{ include.id }}"></use>
+</svg>

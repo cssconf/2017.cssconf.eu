@@ -2,30 +2,53 @@
 layout: default
 ---
 
-<div class="top-bar">
-  <div class="top-bar__title">
-    <span>CSSconf EU</span> 2017
-  </div>
-  <div class="top-bar__cta">
-    <!-- <a class="link--button">Become a sponsor 🚀</a> -->
-  </div>
+<div class="sticky-footer-container__content">
+  <header class="header visuals visuals--02 bg--off-white">
+    <div class="container">
+      <div class="visuals__canvas">
+        {% include helpers/svg id="start-blue-finger" %}
+        {% include helpers/svg id="start-donut" %}
+        {% include helpers/svg id="start-tiny-triangle" %}
+        {% include helpers/svg id="start-blue-arc" %}
+        {% include helpers/svg id="start-circle" %}
+        {% include helpers/svg id="start-arc-1" %}
+        {% include helpers/svg id="start-arc-2" %}
+        {% include helpers/svg id="start-green-gradient" %}
+        {% include helpers/svg id="start-triangle-group" %}
+      </div>
+      <div class="tc py4 px3">
+        {% include helpers/svg id="cssconfeu-logo-2017" %}
+      </div>
+    </div>
+    <div class="container">
+      <p class="intro tc py3">
+        Friday, May 5 2017
+        <br>
+        Berlin, Germany
+      </p>
+      <p class="tc">
+        Ticket Sales, Call for Speakers and Scholarship Applications will open in late 2016.
+        <br>
+        You can <a href="mailto:contact@cssconf.eu">contact us about sponsorship opportunities now</a>.
+      </p>
+      <!-- <p>
+        <a href="https://twitter.com/cssconfeu" class="link--button">Follow us on Twitter</a>
+      </p> -->
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="c-globe">
+        <div class="c-globe__element-wrapper">
+          {% include helpers/svg id="globe" %}
+          <div class="c-globe__orb-1"></div>
+          <div class="c-globe__orb-2"></div>
+          <div class="c-globe__orb-3"></div>
+        </div>
+      </div>
+      <p class="mini mt2 tc">
+        Part of the international <a href="http://cssconf.org/">CSSconf family</a>
+      </p>
+    </div>
+  </section>
 </div>
-
-<header class="header bg--off-white sticky-footer-container__content">
-  <div class="container">
-    <h1>CSSconf EU returns</h1>
-    <p>Friday, May 5 2017</p>
-    <p>Berlin, Germany</p>
-    <a href="https://twitter.com/cssconfeu">@cssconfeu</a>, <a href="https://twitter.com/jsconfeu">@jsconfeu</a>
-  </div>
-</header>
-
-<footer class="footer bg--blue-dark tc">
-  <div class="container mini">
-    <!-- <a href="/code-of-conduct/" class="link--footer">Code of Conduct</a> -->
-    <a href="mailto:contact@cssconf.eu" class="link--footer">contact@cssconf.eu</a>
-    <a target="_blank" href="https://twitter.com/cssconfeu" class="link--footer">Twitter</a>
-    <a target="_blank" href="https://plus.google.com/+CssconfEu/" class="link--footer">Google+</a>
-    <a target="_blank" href="https://www.youtube.com/playlist?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" class="link--footer">Youtube</a>
-  </div>
-</footer>
