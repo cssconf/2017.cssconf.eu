@@ -97,9 +97,33 @@ Follow the installation instructions on [nodejs.org](https://nodejs.org)
 
 Once you install Node, run `npm install`
 
-# Development
+# CSSconf 2017 Sponsorship Document
+
+## Installation
+
+Clone project via `git clone`
+
+Change into new project directory `cd 2017-cssconfeu-sponsorship`
+
+Run `bundle install` (in case you have not installed bundler yet `gem install bundler`).
+
+Run `npm install`
+
+Run `npm start`
+
+View the site on `localhost:2017`
+
+## Editing Content
+
+For creating new sponsorship offers, check out [the README in offers/](offers/)
+
+## Development
 
 Run a dev server with `npm start`
+
+The site is built using Jekyll.
+
+### Use and update assets
 
 Some assets, including most all CSS, are located in a separate repo (2017-assets) and loaded as a dependency. That means if you need to make CSS changes you’ll need to make your edits there.
 
@@ -108,13 +132,19 @@ use `npm link` to always grab the latest CSS from your local clone. Just clone t
 
 *Note*: If you use `npm link` you may start seeing a bunch of warnings whenever you run `npm install`. Seems to be a bug in NPM? Don’t worry about it!
 
-The site is built using Jekyll
+### Troubleshooting
 
-Front end assets like CSS, JS, etc, are built locally using Gulp. The build
-artifacts are then committed to git and Jekyll handles the rest. Asset sources
-can be found in `_assets/` and will be built into `assets/`
+Not seeing your changes render on the site? Deleting your `node_modules/` folder and re-running `npm install` and or deleting the Jekyll output folder `_site` sometimes works wonders.
 
-# Deployment (publishing a new version of the website)
+### SVG
 
-Since we're using GitHub Pages, all changes merged into the `gh-pages` branch of
-`cssconf/2017.cssconf.eu` are automatically deployed
+There’s a helper component to make including an SVG as simple as this:
+`{% include helpers/svg id="circle" %}`
+The id must be the file-name of any svg inside the svg folder in assets. The output will be an inlined SVG, meaning it can be styled and animated with CSS.
+
+### Publishing
+
+To publish in production, have your changes merged into `gh-pages` on `cssconfeu/2017.cssconf.eu`
+
+If you have made changes to the markup / code / style, first make sure the `assets/`
+folder is up to date (ensure this via `gulp build`) and is committed to git.
