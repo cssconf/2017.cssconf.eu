@@ -22,7 +22,25 @@
 
   {% include top-bar.html %}
 
-  {{ content }}
+  <div class="sticky-footer-container__content">
+    {{ content }}
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="c-globe">
+        <div class="c-globe__element-wrapper">
+          {% include helpers/svg id="globe" %}
+          <div class="c-globe__orb-1"></div>
+          <div class="c-globe__orb-2"></div>
+          <div class="c-globe__orb-3"></div>
+        </div>
+      </div>
+      <p class="mini mt2 tc">
+        Part of the international <a href="http://cssconf.org/">CSSconf family</a>
+      </p>
+    </div>
+  </section>
 
   {% include footer.html %}
 

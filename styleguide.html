@@ -1,10 +1,8 @@
 ---
-layout: styleguide
+layout: default
 permalink: /styleguide
-font_types: ['thin', 'thin-oblique', 'regular', 'regular-oblique', 'medium', 'bold']
 ---
 
-{% for type in page.font_types %}
   <h1 class="styleguide__header styleguide__header--{{ type }}">One Morning, When Gregor Samsa Woke</h1>
 
   <div class="styleguide__content styleguide__content--{{ type }}">
@@ -19,4 +17,3 @@ font_types: ['thin', 'thin-oblique', 'regular', 'regular-oblique', 'medium', 'bo
       peacefully between its four familiar walls.
     </p>
   </div>
-{% endfor %}
