@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <meta property="og:url" content="http://2017.cssconf.eu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSSconf EU 2017 | Friday, May 5 2017 | Berlin, Germany" />
+    <meta property="og:description" content="CSSconf EU is conference dedicated to all those passionate about design, CSS, and the Web. For the community, by the community." />
+    <meta property="og:image" content="{{ "/assets/images/open-graph-image.png" | prepend: site.url }}" />
     {% include favicon.html %}
 </head>
 <body class="sticky-footer-container">
