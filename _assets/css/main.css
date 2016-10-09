@@ -9,6 +9,5 @@
 }
 
 .sticky-footer-container__content {
-  flex: 1 0 100%;
-  /*border: 3px solid green;*/
+  flex: 1 0 auto;
 }
