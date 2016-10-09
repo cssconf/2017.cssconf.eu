@@ -21,10 +21,6 @@
   <div style="height: 0; width: 0; position: absolute; visibility: hidden;">
     {% include assets/sprite.svg %}
   </div>
-  {% comment %} Hide nav on home page for now {% endcomment %}
-  {% unless page.url == "/" or page.url == "" %}
-    {% include main-nav.html %}
-  {% endunless %}
 
   {% include top-bar.html %}
 

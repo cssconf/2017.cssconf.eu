@@ -1,19 +1,323 @@
 ---
-layout: default
-permalink: /styleguide
+layout: subpage
+page_id: styleguide
+title: Styleguide
+subtitle: Test Test we’re testing styles here
 ---
 
-  <h1 class="styleguide__header styleguide__header--{{ type }}">One Morning, When Gregor Samsa Woke</h1>
+<section class="bg--off-white">
+  <div class="container">
+    <p class="intro">
+      INTRO PARAGRAPH Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+    </p>
 
-  <div class="styleguide__content styleguide__content--{{ type }}">
     <p>
-      From troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back,
-      and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff
-      sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+      DEFAULT PARAGRAPH Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    </p>
+    <p class="mini">
+      MINI PARAGRAPH Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    </p>
+    <h1>H1 Heading Lorem Ipsum</h1>
+    <h2>H2 Heading Lorem Ipsum</h2>
+    <h3>H3 Heading Lorem Ipsum</h3>
+    <h4>H4 Heading Lorem Ipsum</h4>
+    <h5>H5 Heading Lorem Ipsum</h5>
+    <h6>H6 Heading Lorem Ipsum</h6>
+    <h2 class="color--blue">Headings can be blue</h2>
+    <h2 class="color--green">Headings can be green</h2>
+    <h2 class="tc">Headings can be centered</h2>
+    <p>
+      Lorem ipsum dolor <a href=#>this is a normal link</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
     </p>
     <p>
-      His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s
-      happened to me?” he thought. It wasn’t a dream. His room, a proper human room although a little too small, lay
-      peacefully between its four familiar walls.
+      <a href="#" class="link--button">This is a button</a>
     </p>
   </div>
+</section>
+
+<section class="bg--blue color--white tc">
+  <div class="container">
+    <h2>Headings can be white and centered</h2>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>This is a list</h2>
+    <ul class="fact-list">
+      <li><span class="fact-list__title">Location</span> Berlin, Germany</li>
+      <li><span class="fact-list__title">Venue</span> Arena</li>
+      <li><span class="fact-list__title">Date</span> May 5, 2017</li>
+      <li><span class="fact-list__title">Attendees</span> 500+</li>
+      <li><span class="fact-list__title">Speakers</span> 12</li>
+      <li><span class="fact-list__title">Topics</span> Web Development, UX, CSS, SVG, JavaScript</li>
+      <li><span class="fact-list__title">Level</span> Advanced to Expert</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>SVG FTW!</h2>
+    <p>
+      Use the icon.html partial to inline SVGs.
+    </p>
+
+    <div class="row">
+      <div class="col-xs-3">
+        {% include helpers/svg id="combined-shapes-a" %}
+      </div>
+      <div class="col-xs-3">
+        {% include helpers/svg id="tri-triangles-a" %}
+      </div>
+      <div class="col-xs-3">
+        {% include helpers/svg id="arc" %}
+      </div>
+      <div class="col-xs-3">
+        {% include helpers/svg id="emoji-cool" %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg--light">
+  <div class="container dev-grid">
+
+    <h2>Grid System</h2>
+    <p>
+      We use <a href="http://flexboxgrid.com/">flexboxgrid.com</a>. Please make yourself familar with it before using it. *Never* apply additional styles or classes to grid elements (.row, .col).
+    </p>
+    <p>
+      Full-width = 12 columns. Gutter 22px.
+    </p>
+
+    <div class="row">
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box">1col</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="box">12cols, responsive 6cols</div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="box">12cols, responsive 6cols</div>
+      </div>
+    </div>
+
+    <div class="row center-xs">
+      <div class="col-xs-10">
+        <div class="box">10cols centered</div>
+      </div>
+    </div>
+
+    <div class="row center-xs">
+      <div class="col-xs-8">
+        <div class="box">8cols centered</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-6">
+        <div class="box">6cols offset</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="box">6cols</div>
+      </div>
+      <div class="col-xs-6">
+        <div class="box">6cols</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+    </div>
+
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <div class="box">12 cols, responsive 4cols</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Box Styles</h2>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="bg--off-white">
+          bg--off-white
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="bg--off-white box--padded">
+          bg--off-white box--padded
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="bg--white box--shadow box--padded">
+          bg--white box--shadow box--padded
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="bg--yolk box--padded">
+          bg--yolk box--padded
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="bg--rose box--padded">
+          bg--rose box--padded
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="bg--blue box--padded color--rose">
+          bg--blue box--padded color--rose
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h1>Utility Classes</h1>
+    <p>
+      For the sake of quickly developing layouts, we use a pre-defined grid system, and a tachyons-style of utility classes. Before authoring component-css, double-check whether you can achieve your goal with simply applying utility classes to the markup.
+    </p>
+    <h2>Text Colors</h2>
+    <p>
+      Apply color utility classes like <code>.color--red</code> or <code>.color--white</code> as needed.
+      <span class="color--green">This is green text</span> <span class="color--rose">and this is rose text</span> <span class="color--yolk">and you get</span> <span class="color--plum">the</span> <span class="color--blue-light">idea</span> <span class="color--salmon">.</span>
+    </p>
+    <h2>Backgrounds</h2>
+    <p>
+      Apply background utility classes like <code>.bg--blue</code> or <code>.bg--salmon</code> as needed. Those can be applied to full-width sections, or boxes, or anything really. For background image use classes like <code>.bg--img-combined-shapes-a</code>.
+    </p>
+  </div>
+</section>
+
+<section class="bg--off-white">
+  <p class="tc">bg--off-white</p>
+</section>
+
+<section class="bg--blue bg--img-combined-shapes-a color--white">
+  <p class="tc">bg--blue bg--img-combined-shapes-a color--white</p>
+</section>
+
+<section class="bg--white-grey">
+  <p class="tc">bg--white-grey</p>
+</section>
+
+<section class="bg--salmon">
+  <p class="tc">bg--salmon</p>
+</section>
+
+<section class="bg--red">
+  <p class="tc">bg--red</p>
+</section>
+
+<section class="bg--mint">
+  <p class="tc">bg--mint</p>
+</section>
+
+<section class="bg--green">
+  <p class="tc">bg--green</p>
+</section>
+
+<section class="bg--yellow">
+  <p class="tc">bg--yellow</p>
+</section>
+
+<section class="bg--yellow-50">
+  <p class="tc">bg--yellow-50</p>
+</section>
+
+<section class="bg--yolk">
+  <p class="tc">bg--yolk</p>
+</section>
+
+<section class="bg--rose">
+  <p class="tc">bg--rose</p>
+</section>
+
+<section class="bg--plum color--rose">
+  <p class="tc">bg--plum</p>
+</section>
+
+<section class="bg--blue color--yolk">
+  <p class="tc">bg--blue</p>
+</section>
+
+<section class="bg--blue-dark color--white">
+  <p class="tc">bg--blue-dark</p>
+</section>
+
+<section class="bg--blue-light">
+  <p class="tc">bg--blue-light</p>
+</section>

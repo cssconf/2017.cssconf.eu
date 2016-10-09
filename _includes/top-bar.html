@@ -2,6 +2,15 @@
   <a class="top-bar__title">
     <span>CSSconf EU</span> 2017
   </a>
+  {% comment %} Hide nav on home page for now {% endcomment %}
+  {% unless page.url == "/" or page.url == "" %}
+    <div class="">
+      {% for pageId in site.data.main_nav %}
+        {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
+        <a href="{{ linkedPage.url | prepend: site.baseurl }}">{{ pageId | capitalize }}</a>
+      {% endfor %}
+    </div>
+  {% endunless %}
   <div class="top-bar__cta">
     <a class="link--button" href="https://twitter.com/cssconfeu">Follow us on Twitter</a>
   </div>
