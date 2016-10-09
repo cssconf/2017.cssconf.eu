@@ -1,5 +1,6 @@
 <svg
-  viewBox="{% if include.viewbox %}{{ include.viewbox }}{% else %}0 0 16 16{% endif %}"
+  viewBox="{% if include.viewBox %}{{ include.viewBox }}{% else %}0 0 16 16{% endif %}"
+  preserveAspectRatio = "xMidYMid meet"
   class="svg svg-{{ include.id }}">
   {% if include.title %}
     <title id="title-{{ include.id }}">{{ include.title }}</title>
