@@ -4,10 +4,10 @@
   </a>
   {% comment %} Hide nav on home page for now {% endcomment %}
   {% unless page.url == "/" or page.url == "" %}
-    <div class="">
+    <div class="top-bar__nav">
       {% for pageId in site.data.main_nav %}
         {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
-        <a href="{{ linkedPage.url | prepend: site.baseurl }}">{{ pageId | capitalize }}</a>
+        <a href="{{ linkedPage.url | prepend: site.baseurl }}" class="top-bar__nav-link">{{ linkedPage.title | capitalize }}</a>
       {% endfor %}
     </div>
   {% endunless %}
