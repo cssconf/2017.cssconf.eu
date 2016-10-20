@@ -5,3 +5,4 @@ _site/
 .dir-locals.el
 *~
 node_modules/
+.idea/
