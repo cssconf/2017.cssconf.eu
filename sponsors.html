@@ -2,78 +2,27 @@
 layout: subpage
 page_id: sponsors
 title: "Sponsors"
-subtitle: "Nothing to see here yet :)"
+subtitle:
 permalink: /sponsors/
 ---
 
-<h2 class="color--blue">From the community, for the community</h2>
 <p>
-  CSSconf EU is a not-for-profit conference dedicated to the creatives and engineers who build the world’s most engaging
-  user interfaces. For the third year in a row, CSSconf EU will gather a diverse audience of more than 400 brilliant
-  developers and designers who share a passion for the design language of the web: CSS.
+We are currently offering sponsorship packages and media partnerships for CSSconf EU 2017. Learn more <a href="http://sponsoring.cssconf.eu/">here</a> and check out the great companies who supported us last year:
 </p>
 
-<p>
-  The talks focus on the latest technologies, cutting edge techniques, and tools. CSSconf creates a platform for the
-  young and evolving CSS community. It bridges the gap between designers and developers and connects experienced
-  professionals with new talent.
-</p>
 
-<p>
-  <a href="https://www.youtube.com/watch?v=BhMf-DFEdOA&index=12&list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R">Watch the
-    CSSconf 2014 film</a>
-</p>
-
-<h2 class="color--blue">Your Support Is Needed</h2>
-<p>
-  CSSconf EU is organized entirely by a team of committed volunteers and every cent we raise goes towards making it the
-  high-quality, diverse event it is. We are always excited to discuss sponsorship and media partner opportunities,
-  please reach out to <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a> for details.
-</p>
-
-<h2 class="color--blue">Why sponsor CSSconf EU?</h2>
-
-<h3 class="color--green">International, Local, Collaborative</h3>
-<p>
-  CSSconf EU is one of the main events of <a href="http://wwwtf.berlin/">Web Tech Fest Berlin</a> - a week full of
-  conferences, workshops, and hackathons dedicated to web development and design. Internationally, we work closely
-  together with our colleagues from CSSconf in Australia, Asia, and the US.
-</p>
-<h3 class="color--green">Reaching Creatives in the Community…</h3>
-<p>
-  35k+ YouTube subscribers | 4.2k+ Twitter followers | 1k+ WWWTF attendees
-</p>
-<h3 class="color--green">…from 30+ Countries</h3>
-<p>
-  Every year, CSSconf EU is attended by people from all corners of the world: Germany, US, UK, Sweden, Australia,
-  Russia, New Zealand, Norway, Switzerland, Netherlands, Denmark, France, Poland, Iran, Spain, Portugal, Austria,
-  Lebanon, India, Canada, Finland, Estonia, Kenya, Japan.
-</p>
-<h3 class="color--green">Safe, Diverse and Inclusive</h3>
-<p>
-  CSSconf EU holds itself up to high standards of community and diversity. Our priority is to create a welcoming and
-  safe space. We strive to bring diverse voices on stage and we provide a lot of information about the application
-  process, additional blog posts covering the topic, and personal support (emails, slack chat) in order to achieve this
-  goal. We also reach out via email to under-represented individuals and groups to encourage them to submit talk
-  proposals. An example of the success of our efforts is that in 2013 and 2014, more than 40% of our speakers were
-  female.
-</p>
-<h3 class="color--green">Educational and Encouraging</h3>
-<p>
-  To achieve our goal we actively encourage new and upcoming speakers, we run <a href="http://cssclass.es/">free
-  CSS workshops</a> for beginners, we collaborate with tech education initiatives, and we enforce a <a
-  href="/code-of-conduct.html">Code of Conduct</a>.
-</p>
-<h3 class="color--green">Enabling</h3>
-<p>
-  We offer <a href="/diversity-support-tickets.html">Diversity Tickets</a> which enable more members
-  of under-represented groups to attend CSSconf EU. Sponsors can help us with that, too – <a
-  href="mailto:contact@cssconf.eu">ask us for ways to get involved</a>!
-</p>
-<h3 class="color--green">Strictly Not-for-profit</h3>
-<p>
-  CSSconf EU is organized by volunteers. Every cent we raise goes towards making the conference better.
-</p>
-<p>
-  <a href="http://sponsoring.cssconf.eu" class="link--button">Get Sponsor Information</a>
-</p>
+ <section>
+    <div class="container">
+      <div class="row row--bottom-margin center-xs">
+        {% for sponsor in site.data.sponsors2015 %}
+          <div class="col-xs-6 col-sm-4">
+            <div class="bg--off-white box--padded box--sponsor-2015">
+              <a href="{{ sponsor.url }}">
+                {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
