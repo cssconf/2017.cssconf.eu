@@ -12,6 +12,17 @@
     </div>
   {% endunless %}
   <div class="top-bar__cta">
-    <a class="link--button" href="https://confirmsubscription.com/h/d/879A481DB04CB70D">Subscribe to our Newsletter</a>
+    {% if site.cfs_url %}
+      <a class="link--button link--animated"
+         href="{{ site.cfs_url }}">
+        Submit a proposal
+        <span class="link__icon link__icon--rocket">🚀</span>
+      </a>
+    {% else %}
+      <a class="link--button link--animated"
+         href="{{ site.newsletter_url }}">
+        Subscribe to our Newsletter
+      </a>
+    {% endif %}
   </div>
 </div>
