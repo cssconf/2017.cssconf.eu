@@ -10,6 +10,7 @@ title: CSSconf EU 2017
 description: "CSSconf EU 2017, Berlin, Germany"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://2017.cssconf.eu" # the base hostname & protocol for your site
+newsletter_url: "https://confirmsubscription.com/h/d/879A481DB04CB70D"
 
 # Build settings
 markdown: kramdown
