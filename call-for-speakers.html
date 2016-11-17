@@ -2,7 +2,6 @@
 layout: default
 page_id: call-for-speakers
 title: "Call for Speakers"
-subtitle: "Nothing to see here yet :)"
 permalink: /call-for-speakers/
 ---
 
@@ -23,7 +22,7 @@ permalink: /call-for-speakers/
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-2">
-          <p class='intro color--white'>{{page.subtitle}}</p>
+          {% if page.subtitle %}<p class='intro color--white'>{{page.subtitle}}</p>{% endif %}
           <nav>
             <a href="#topic-suggestions" class="link--nav link--arrow link--arrow-white">
               Topic suggestions
