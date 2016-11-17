@@ -2,15 +2,12 @@
   <a class="top-bar__title" href="/">
     <span>CSSconf EU</span> 2017
   </a>
-  {% comment %} Hide nav on home page for now {% endcomment %}
-  {% unless page.url == "/" or page.url == "" %}
-    <div class="top-bar__nav">
-      {% for pageId in site.data.main_nav %}
-        {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
-        <a href="{{ linkedPage.permalink }}" class="top-bar__nav-link">{{ linkedPage.title | capitalize }}</a>
-      {% endfor %}
-    </div>
-  {% endunless %}
+  <div class="top-bar__nav">
+    {% for pageId in site.data.main_nav %}
+      {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
+      <a href="{{ linkedPage.permalink }}" class="top-bar__nav-link">{{ linkedPage.title }}</a>
+    {% endfor %}
+  </div>
   <div class="top-bar__cta">
     {% if site.cfs_url %}
       <a class="link--button link--animated"
