@@ -9,17 +9,51 @@
     {% endfor %}
   </div>
   <div class="top-bar__cta">
-    {% if site.cfs_url %}
-      <a class="link--button link--animated"
+    {% if site.ticket_sale_url %}
+      <a class="link--button link--animated link--top-bar"
+         href="{{ site.ticket_sale_url }}">
+        Buy tickets
+        <span class="link__icon link__icon--rocket">🚀</span>
+      </a>
+    {% else if site.cfs_url %}
+      <a class="link--button link--animated link--top-bar"
          href="{{ site.cfs_url }}">
         Submit a proposal
         <span class="link__icon link__icon--rocket">🚀</span>
       </a>
     {% else %}
-      <a class="link--button link--animated"
+      <a class="link--button link--animated link--top-bar"
          href="{{ site.newsletter_url }}">
         Subscribe to our Newsletter
       </a>
     {% endif %}
+  </div>
+  <div class="mobile-menu">
+    <label for="mobile-menu" class="mobile-menu__control">
+      {% include helpers/svg id="nav-dots" viewBox="0 0 9 38" %}
+    </label>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu__state">
+    <nav class="mobile-menu__container">
+      <div class="mobile-menu__header">
+        <div class="mobile-menu__title">
+          CSSconf EU<br>
+          Berlin, May 5th 2017
+        </div>
+        <label for="mobile-menu" class="mobile-menu__control mobile-menu__control--active">
+          {% include helpers/svg id="nav-dots" viewBox="0 0 9 38" %}
+        </label>
+      </div>
+      <ul class="mobile-menu__links">
+        {% for pageId in site.data.main_nav %}
+          <li class="mobile-menu__links-item">
+            {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
+            <a href="{{ linkedPage.permalink }}" class="mobile-menu__link">{{ linkedPage.title }}</a>
+          </li>
+        {% endfor %}
+        <li class="mobile-menu__links-item">
+          <a href="http://blog.cssconf.eu" class="mobile-menu__link">Blog</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
