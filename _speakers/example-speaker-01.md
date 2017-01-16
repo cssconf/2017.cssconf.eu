@@ -1,13 +1,19 @@
 ---
-speaker_id: lana-del-ray
-talk_id: scarlet-css-dress
-name: "Lana Del Ray"
-intro: "Ich bins, Lana Del Ray! Lorem dim sum aluminium dolor sit amit git commit it's lit"
+speaker_id: example-speaker-01
+talk_id: example-css-talk
+name: "Longfirstname Speakerlastname"
+firstname: "Longfirstname"
+lastname: "Speakerlastname"
+location: "San Francisco, USA"
+bg: salmon
+color: blue-dark
+intro: "intro text for speaker lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+voluptua"
 links:
-    - text: "@lanadelrey"
-      url: "https://twitter.com/lanadelrey"
-    - text: "lanadelrey.com"
-      url: "http://lanadelrey.com/"
+    - text: "@twitterhandletest"
+      url: "https://twitter.com/twitterhandletest"
+    - text: "example.com"
+      url: "http://example.com/"
 ---
 
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam

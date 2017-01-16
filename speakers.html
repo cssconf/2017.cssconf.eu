@@ -1,16 +1,9 @@
 ---
-layout: subpage
+layout: subpage-wide
 page_id: speakers
 title: "Speakers"
-subtitle: "Nothing to see here yet :)"
+subtitle: "Meet our 2017 line-up. More speakers announced soon!"
 permalink: /speakers/
 ---
-<!--
-<ul class="speaker-list">
-  {% for speaker in site.speakers %}
-    <li>
-      <a href="{{ speaker.url | prepend: site.baseurl }}">{{ speaker.name }}</a>
-    </li>
-  {% endfor %}
-</ul>
--->
+
+{% include speakers-list.html %}

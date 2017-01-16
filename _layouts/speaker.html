@@ -3,28 +3,73 @@ layout: default
 ---
 
 {% assign speaker = page %}
+{% assign talk = site.talks | where: "talk_id", speaker.talk_id | first %}
 
-<article class="speaker">
-  <div class="speaker__info">
-    {% include responsive-image
-         path="/assets/images/speakers"
-         basename=speaker.speaker_id
-         srcset="small.jpg 1x, medium.jpg 2x" %}
-    <h1 class="speaker__name">{{ speaker.name }}</h1>
-    <div class="speaker__bio">
-      {{ speaker.bio | newline_to_br }}
+<header class="header bg--off-white">
+  <div class="container">
+    <div class="speaker">
+      <div class="speaker__text">
+        <h1 class="speaker__name {{ speaker.bg | default:'blue' | prepend:'color--'}}">
+          {% if speaker.firstname and speaker.lastname %}
+            {{ speaker.firstname }}<br>{{ speaker.lastname }}
+          {% else %}
+            {{ speaker.name }}
+          {% endif %}
+        </h1>
+        <div class="speaker__location">{{ speaker.location }}</div>
+      </div>
+
+      <!-- fixme: decorations per speaker need to be dynamic.
+        There are multiple sets of symbols and positionings. Which one to use
+        could either be configured or randomly chosen. -->
+      <div class="speaker__image">
+        <span class="speaker__shapes speaker__shapes--one-before">{% include helpers/svg id="triangle-green" %}</span>
+        {% include responsive-image
+            width=240 height=290
+            path="/assets/images/speakers"
+            basename=speaker.speaker_id
+            srcset="small.jpg 1x, medium.jpg 2x" %}
+        <span class="speaker__shapes speaker__shapes--one-after">{% include helpers/svg id="circle-orange" %}</span>
+      </div>
     </div>
-    <ul class="speaker__link-list">
-      {% for link in speaker.links %}
-        <a class="speaker__link" href="{{ link.url }}">{{ link.text }}</a>
-      {% endfor %}
-    </ul>
   </div>
-  {% assign talk = site.talks | where: "speaker_id", speaker.speaker_id | first%}
-  <section class="speaker__talk talk">
-    <h1 class="talk__title">{{ talk.title }}</h1>
-    <div class="talk__summary">
-      {{ talk.summary | newline_to_br }}
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="box">
+          <article class="speaker">
+            <div class="speaker__info">
+              <div class="speaker__bio">
+                <p class="intro">{{ speaker.intro | newline_to_br }}</p>
+              </div>
+              <div class="speaker__content">
+                {{ speaker.content }}
+              </div>
+
+              <div class="speaker__link-list">
+                {% for link in speaker.links %}
+                  <a class="speaker__link" href="{{ link.url }}">{{ link.text }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+            <!--
+            <section class="speaker__talk talk">
+              <h1 class="talk__title">{{ talk.title }}</h1>
+              <div class="talk__summary">
+                {{ talk.content | newline_to_br }}
+              </div>
+            </section>
+            -->
+          </article>
+        </div>
+      </div>
     </div>
   </section>
-</article>
+
+  {% include speakers-list.html %}
+
+</main>

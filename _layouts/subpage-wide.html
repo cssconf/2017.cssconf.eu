@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header class="header bg--off-white">
+  <div class="container tc">
+    <h1 class="pt3">
+      {{page.title}}
+    </h1>
+    <p class="tc mt3 mb0">
+      {{page.subtitle}}
+    </p>
+    <p class="tc">
+      {% if page.cta-link %}
+        <a href="{{page.cta-link}}" class="link--button">{{page.cta-text}}</a>
+      {% endif %}
+    </p>
+  </div>
+</header>
+
+<main>
+  {{ content }}
+</main>

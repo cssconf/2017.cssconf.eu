@@ -9,14 +9,11 @@ Make sure to assign a valid `speaker_id` to link the talk to its speaker
 Example:
 
     ---
-    talk_id: scarlet-css-dress
-    title: "Scarlet CSS Dress"
+    talk_id: example-css-talk
+    title: "This is a placeholder example talk"
     ---
 
-    Long dark night, just you and I, and my scarlet CSS dress, star lit
-    night, wash away the dusk, you and I, the ocean at midnight, in my
-    scarlet CSS, dress, yes, the fog rolls in, misty dark cloudy stormy
-    humid blue yellow purple etc etc I’m Lana Del Ray wassup.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
  - `talk_id`: unique identifier for this talk. This must always correspond
     to the filename (without the `.md`-suffix) and should only contain

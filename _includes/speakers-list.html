@@ -1,0 +1,15 @@
+<section class="section--block-list">
+  <div class="container">
+    <div class="row row--bottom-margin--block-list center-xs">
+      {% for speaker in site.speakers %}
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a  href="{{ speaker.url | prepend: site.baseurl }}"
+            class="box--slightly-padded bg--{{ speaker.bg }} color--{{ speaker.color }} speaker-item">
+          <h4 class="h2 mt2 mb1">{{ speaker.name }}</h4>
+          {{ speaker.location }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

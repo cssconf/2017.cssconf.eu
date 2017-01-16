@@ -1,0 +1,27 @@
+---
+speaker_id: example-speaker-02
+talk_id: example-css-talk
+name: "Longfirstname middlename Speakerlastname"
+firstname: "Longfirstname"
+lastname: "Speakerlastname"
+location: "San Francisco, USA"
+bg: green
+color: white
+intro: "intro text for speaker lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+voluptua"
+links:
+    - text: "@twitterhandletest"
+      url: "https://twitter.com/twitterhandletest"
+    - text: "example.com"
+      url: "http://example.com/"
+---
+
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet.
