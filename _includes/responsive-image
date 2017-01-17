@@ -16,5 +16,8 @@
        {{site.baseurl}}{{path}}/{{basename}}-{{suffix}} {{width}}{% unless forloop.last %}, {% endunless %}
   {% endfor %}
 {% endcapture %}
+{% assign width = include.width %}
+{% assign height = include.height %}
 <img src="{{site.baseurl}}{{path}}/{{basename}}-{{defaultSrc}}"
+     {% if width %}width="{{width}}"{% endif %} {% if height %}height="{{height}}"{% endif %}
      srcset="{{prefixedSrcset}}">
