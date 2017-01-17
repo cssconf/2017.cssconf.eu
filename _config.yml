@@ -11,7 +11,6 @@ description: "CSSconf EU 2017, Berlin, Germany"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://2017.cssconf.eu" # the base hostname & protocol for your site
 newsletter_url: "https://confirmsubscription.com/h/d/879A481DB04CB70D"
-cfs_url: "https://docs.google.com/forms/d/e/1FAIpQLScc1spXJyoYCeCzkKa-H2y57oCdRGxNuwHVGIPKItD_cZXK2Q/viewform"
 ticket_sale_url: "https://ti.to/cssconfeu/cssconfeu-2017"
 
 # Build settings
