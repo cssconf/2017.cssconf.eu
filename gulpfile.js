@@ -84,15 +84,6 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('assets/fonts'))
 });
 
-gulp.task('svg:minify', function () {
-  return gulp
-    .src([
-      '_assets/svg/*.svg'
-    ])
-    .pipe(svgmin())
-    .pipe(gulp.dest('assets/svg'))
-});
-
 /**
  * Concatenate SVGs together into an SVG sprite
  * Note that this is an exceptional case where we output into _includes/
@@ -125,7 +116,7 @@ gulp.task('svg:sprite', function () {
     .pipe(gulp.dest('_includes/assets'));
 });
 
-gulp.task('svg', ['svg:minify', 'svg:sprite']);
+gulp.task('svg', ['svg:sprite']);
 
 gulp.task('watch', function () {
   gulp.watch([
