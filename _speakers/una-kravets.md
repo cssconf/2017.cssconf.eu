@@ -8,6 +8,9 @@ lastname: Kravets
 location: New York, US
 bg: mint
 color: white
+decoration1: quart-circle-blue
+decoration2: triangle-red
+
 intro: >
   Una Kravets is the kind of speaker who does not only give brilliant
   in-depth talks on whatever latest detail of the CSS specification

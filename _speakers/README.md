@@ -14,6 +14,8 @@ Example
     lastname: "Speakerlastname"
     location: "San Francisco, USA"
     color: mint
+    decoration1: quart-circle-blue
+    decoration2: triangle-red
     intro: "intro text for speaker lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     voluptua"
     links:
@@ -42,6 +44,8 @@ Example
  - `lastname`: [optional] The lastname, or second line of the name for the details-page.
  - `location`: the location (city-name) of the speaker, will be displayed along with the name in teaser and speaker-header.
  - `color`: name of the color (as defined in css) used for both the headline and the background of the teaser-box (see http://2017.cssconf.eu/styleguide/ for the color-names)
+ - `decoration1`: svg-id for the decoration-icon top-left of the picture
+ - `decoration2`: svg-id for the decoration-icon bottom-right of the picture
  - `intro`: the opening-paragraph for the speaker-page
  - `links`: a sorted list of links to appear below the speaker-description. Each link has to contain the fields `text` and `url`.
  - the content of the document (everything behind the "frontmatter"-/metadata-block – that is, after the `---`) is the content-part of the speaker-details page.

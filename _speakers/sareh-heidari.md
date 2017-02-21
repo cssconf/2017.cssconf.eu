@@ -8,6 +8,8 @@ lastname: "Heidari"
 location: "London, UK"
 bg: green
 color: white
+decoration1: circle-salmon
+decoration2: half-pill-orange
 intro: >
   Building localised websites, for over 20 languages and a global
   audience: that is the problem which Sareh Heidari tackles at BBC News.

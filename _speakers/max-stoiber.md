@@ -8,6 +8,9 @@ lastname: Stoiber
 location: Vienna, AT
 bg: green
 color: white
+decoration1: half-pill-orange
+decoration2: circle-red
+
 intro: >
   If you work with CSS in JS, chances are you have come across Max
   Stoiber’s work. In the past year, he gave

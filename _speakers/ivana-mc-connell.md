@@ -8,6 +8,9 @@ lastname: "McConnell"
 location: "Vancouver, BC"
 bg: blue
 color: white
+decoration1: square-salmon
+decoration2: wave-red
+
 intro: >
   Whether in agencies, software companies, or creative studios:
   Expert-level CSS is a key skill needed to ship competitive websites,

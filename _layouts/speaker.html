@@ -4,7 +4,7 @@ layout: default
 
 {% assign speaker = page %}
 {% assign talk = site.talks | where: "talk_id", speaker.talk_id | first %}
-<header class="header bg--off-white">
+<header class="header header--speaker bg--off-white">
   <div class="container">
     <div class="speaker">
       <div class="speaker__text">
@@ -18,17 +18,19 @@ layout: default
         <div class="speaker__location">{{ speaker.location }}</div>
       </div>
 
+      {% assign decoration1 = speaker.decoration1 | default:"triangle-green" %}
+      {% assign decoration2 = speaker.decoration2 | default:"circle-orange" %}
       <!-- fixme: decorations per speaker need to be dynamic.
         There are multiple sets of symbols and positionings. Which one to use
         could either be configured or randomly chosen. -->
       <div class="speaker__image">
-        <span class="speaker__shapes speaker__shapes--one-before">{% include helpers/svg id="triangle-green" %}</span>
+        <span class="speaker__shapes speaker__shapes--one-before">{% include helpers/svg id=decoration1 %}</span>
         {% include responsive-image
             width=240 height=290
             path="/assets/images/speakers"
             basename=speaker.speaker_id
             srcset="small.jpg 1x, medium.jpg 2x" %}
-        <span class="speaker__shapes speaker__shapes--one-after">{% include helpers/svg id="circle-orange" %}</span>
+        <span class="speaker__shapes speaker__shapes--one-after">{% include helpers/svg id=decoration2 %}</span>
       </div>
     </div>
   </div>
