@@ -4,7 +4,6 @@ layout: default
 
 {% assign speaker = page %}
 {% assign talk = site.talks | where: "talk_id", speaker.talk_id | first %}
-
 <header class="header bg--off-white">
   <div class="container">
     <div class="speaker">
@@ -41,29 +40,29 @@ layout: default
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <div class="box">
           <article class="speaker">
-            <div class="speaker__info">
+            <ul class="speaker__info">
               <div class="speaker__bio">
                 <p class="intro">{{ speaker.intro | newline_to_br }}</p>
               </div>
+
               <div class="speaker__content">
                 {{ speaker.content }}
               </div>
 
-              <div class="speaker__link-list">
-                {% for link in speaker.links %}
-                  <a class="speaker__link" href="{{ link.url }}">{{ link.text }}</a>
-                {% endfor %}
-              </div>
-            </div>
+              <div class="box bg--off-white speaker__talk-info">
+                <h2 class="{{ speaker.bg | default:'blue' | prepend:'color--'}}">{{ talk.title }}</h2>
 
-            <!--
-            <section class="speaker__talk talk">
-              <h1 class="talk__title">{{ talk.title }}</h1>
-              <div class="talk__summary">
-                {{ talk.content | newline_to_br }}
+                {{ talk.content }}
               </div>
-            </section>
-            -->
+
+              <ul class="speaker__link-list">
+                {% for link in speaker.links %}
+                  <li class="speaker__link">
+                    <a href="{{ link.url }}">{{ link.text }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           </article>
         </div>
       </div>
