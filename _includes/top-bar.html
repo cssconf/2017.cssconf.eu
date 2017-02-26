@@ -5,7 +5,9 @@
   <div class="top-bar__nav">
     {% for pageId in site.data.main_nav %}
       {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
-      <a href="{{ linkedPage.permalink }}" class="top-bar__nav-link">{{ linkedPage.title }}</a>
+      <a href="{{ linkedPage.permalink }}" class="top-bar__nav-link {% if page.url == linkedPage.url %}top-bar__nav-link--active{% endif %}">
+        {{ linkedPage.title }}
+      </a>
     {% endfor %}
     <a href="http://blog.cssconf.eu" class="top-bar__nav-link">Blog</a>
   </div>
