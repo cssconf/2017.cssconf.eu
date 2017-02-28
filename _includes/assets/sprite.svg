@@ -271,6 +271,11 @@
         Combined Shape
     </title>
     <path d="M0 92v-.24C0 41.083 41.083 0 91.76 0H92v92H0z" fill="#2176FF" fill-rule="evenodd"/>
+</symbol><symbol id="square-red" viewBox="0 0 120 120">
+    <title>
+        Rectangle 8
+    </title>
+    <path fill="#ea3a3a" d="M61.374 3l57.374 57.374-57.374 57.374L4 60.374z" fill-rule="evenodd"/>
 </symbol><symbol id="square-salmon" viewBox="0 0 82 82">
     <title>
         Rectangle 8
@@ -359,6 +364,8 @@
         Triangle Copy
     </title>
     <path d="M0 80.037L39.327 0l39.328 80.037z" fill="#42CDB2" fill-rule="evenodd"/>
+</symbol><symbol id="triangle-plum" viewBox="0 0 162 104">
+    <path fill="#544ebf" d="M.152 0H162L81.076 103.951z" fill-rule="evenodd"/>
 </symbol><symbol id="triangle-red" viewBox="0 0 93 60">
     <title>
         Triangle
