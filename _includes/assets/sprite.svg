@@ -58,6 +58,11 @@
     </g>
 </symbol><symbol id="circle-orange" viewBox="0 0 119 119">
     <ellipse cx="1110.345" cy="819.15" rx="59.345" ry="59.15" transform="translate(-1051 -760)" fill="#FF6D56" fill-rule="evenodd"/>
+</symbol><symbol id="circle-plum" viewBox="0 0 102 102">
+    <title>
+        Combined Shape
+    </title>
+    <path d="M51 102c28.167 0 51-22.833 51-51S79.167 0 51 0 0 22.833 0 51s22.833 51 51 51zm.5-25C65.583 77 77 65.583 77 51.5S65.583 26 51.5 26 26 37.417 26 51.5 37.417 77 51.5 77z" fill="#544EBF" fill-rule="evenodd"/>
 </symbol><symbol id="circle-red" viewBox="0 0 46 46">
     <title>
         Oval 4 Copy 18
@@ -156,6 +161,11 @@
         Combined Shape
     </title>
     <path d="M88.27 0H.23L.02 56.391c.019.857-.013 1.72-.019 2.59C-.172 83.29 19.396 103 43.707 103c24.312 0 44.16-19.708 44.333-44.02.006-.869-.013-1.732-.056-2.589L88.269 0z" fill="#FBC227" fill-rule="evenodd"/>
+</symbol><symbol id="half-pill-rose" viewBox="0 0 89 103">
+    <title>
+        Combined Shape
+    </title>
+    <path d="M88.27 0H.23L.02 56.391c.019.857-.013 1.72-.019 2.59C-.172 83.29 19.396 103 43.707 103c24.312 0 44.16-19.708 44.333-44.02.006-.869-.013-1.732-.056-2.589L88.269 0z" fill="#FA99B4" fill-rule="evenodd"/>
 </symbol><symbol id="half-pill2-orange" viewBox="0 0 61 72">
     <title>
         Combined Shape
