@@ -22,5 +22,5 @@ links:
 ---
 
 <p>
-Rachel, who many may know as one of the foremost experts on CSS Grid Layout, and who we were very honored to have as a speaker at CSSconf EU in 2015, will be giving a brand new talk at CSSconf EU 2017 which will have us taking a step back and looking at CSS as a technology on the whole. Her talk will illustrate the standards process by which new CSS features come to fruition, trace how CSS came to be where it is today, and in the end, give us insight into how we can help shape CSS in the future.
+Rachel, who many may know as one of the foremost experts on CSS Grid Layout, and who we were very honored to have as a speaker at [speaker at CSSconf EU in 2015](https://www.youtube.com/watch?v=GRexIOtGhBU), will be giving a brand new talk at CSSconf EU 2017 which will have us taking a step back and looking at CSS as a technology on the whole. Her talk will illustrate the standards process by which new CSS features come to fruition, trace how CSS came to be where it is today, and in the end, give us insight into how we can help shape CSS in the future.
 </p>
