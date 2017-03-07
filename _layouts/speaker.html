@@ -51,6 +51,7 @@ layout: default
                 {{ speaker.content }}
               </div>
 
+              {% if talk %}
               <div class="box bg--off-white speaker__talk-info">
                 <h2 class="{{ speaker.bg | default:'blue' | prepend:'color--'}}">{{ talk.title }}</h2>
 
@@ -59,11 +60,12 @@ layout: default
 
               <ul class="speaker__link-list">
                 {% for link in speaker.links %}
-                  <li class="speaker__link">
-                    <a href="{{ link.url }}">{{ link.text }}</a>
-                  </li>
+                <li class="speaker__link">
+                  <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
                 {% endfor %}
               </ul>
+              {% endif %}
             </div>
           </article>
         </div>
