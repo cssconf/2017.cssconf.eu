@@ -3,7 +3,7 @@ speaker_id: tim-holman
 role: moderator
 name: Tim Holman
 firstname: Tim
-lastname: Hokman
+lastname: Holman
 location: New York, US
 bg: rose
 color: white
@@ -11,7 +11,7 @@ decoration1: circle-orange
 decoration2: triangle-mint
 
 intro: >
-  Tim is an interactive developer, a professional fun-haver at CodePen, and the the creator of a number of wonderful web projects.
+  Tim is an interactive developer currently working at <a href="http://codepen.io/">CodePen</a> and the the creator of a number of wonderful web projects.
 
 links:
     - text: "@tholman"
