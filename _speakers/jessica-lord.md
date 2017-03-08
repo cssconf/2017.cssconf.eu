@@ -4,7 +4,7 @@ role: moderator
 name: Jessica Lord
 firstname: Jessica
 lastname: Lord
-location: Boston, US
+location: The Internet
 bg: plum
 color: white
 decoration1: thumb-pink
