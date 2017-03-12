@@ -9,6 +9,7 @@ bg: plum
 color: white
 decoration1: thumb-pink
 decoration2: triangle-yellow
+slot: 2
 
 intro: >
   Jessica is an open web developer and an urban designer. Previously, she worked at <a href="https://github.com">GitHub</a> where she started the Electron team, before which she was a <a href="https://www.codeforamerica.org">Code for America</a> fellow.

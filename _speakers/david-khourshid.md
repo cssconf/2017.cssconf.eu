@@ -10,6 +10,7 @@ bg: mint
 color: white
 decoration1: half-circle-salmon
 decoration2: wave-red
+slot: 6
 
 intro: >
   David Khourshid already had us speechless with his CSS animations, so we’re

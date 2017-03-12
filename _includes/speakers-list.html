@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row row--bottom-margin--block-list center-xs">
       {% comment %} Sorting is a hack for now to divide colors {% endcomment %}
-      {% assign speakers = site.speakers | sort: 'decoration1' %}
+      {% assign speakers = site.speakers | sort: 'slot' %}
       {% for speaker in speakers %}
       <div class="col-xs-12 col-sm-6 col-md-4">
         <a  href="{{ speaker.url | prepend: site.baseurl }}"

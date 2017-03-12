@@ -10,6 +10,7 @@ bg: mint
 color: white
 decoration1: quart-circle-blue
 decoration2: triangle-red
+slot: 11
 
 intro: >
   Una Kravets is the kind of speaker who does not only give brilliant

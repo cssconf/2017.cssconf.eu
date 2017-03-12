@@ -9,6 +9,7 @@ bg: rose
 color: white
 decoration1: circle-orange
 decoration2: triangle-mint
+slot: 1
 
 intro: >
   Tim is an interactive developer currently working at <a href="http://codepen.io/">CodePen</a> and the the creator of a number of wonderful web projects.
