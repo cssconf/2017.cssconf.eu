@@ -28,3 +28,23 @@ permalink: /sponsors/
 </section>
 
 {% include diversity-tickets-hall-of-fame.html %}
+
+<section>
+  <div class="container">
+    <h2 class="tac">Media Partners</h2>
+    <p>
+      We are currently looking for media partners. Run a magazine, blog, podcast, newsletter? Contact us at <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a> for options.
+    </p>
+    <div class="row">
+      {% for partner in site.data.media_partners2017 %}
+      <div class="col-xs-6 col-sm-4">
+        <div class="bg--off-white box--padded box--sponsor">
+          <a href="{{ partner.url }}">
+            {% include helpers/svg id=partner.logoId viewBox="0 0 16 10" %}
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
