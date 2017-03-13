@@ -10,6 +10,7 @@ bg: mint
 color: white
 decoration1: triangle-plum
 decoration2: square-red
+slot: 13
 
 intro: >
   Guil Hernandez does a wonderful job of teaching CSS over at

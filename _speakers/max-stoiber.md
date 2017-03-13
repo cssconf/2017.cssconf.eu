@@ -10,6 +10,7 @@ bg: green
 color: white
 decoration1: half-pill-orange
 decoration2: circle-red
+slot: 12
 
 intro: >
   If you work with CSS in JS, chances are you have come across Max

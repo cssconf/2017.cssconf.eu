@@ -10,6 +10,7 @@ bg: blue
 color: white
 decoration1: square-salmon
 decoration2: wave-red
+slot: 7
 
 intro: >
   Whether in agencies, software companies, or creative studios, expert-level CSS is a key skill needed to ship competitive websites, appsand digital products. Developing CSS has become its own profession, but what exactly makes a CSS developer?

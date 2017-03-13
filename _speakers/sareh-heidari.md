@@ -10,6 +10,8 @@ bg: plum
 color: white
 decoration1: circle-salmon
 decoration2: half-pill-orange
+slot: 4
+
 intro: >
   Building localised websites, for over 20 languages and a global
   audience: that is the problem which Sareh Heidari tackles at BBC News.

@@ -10,6 +10,7 @@ bg: yolk
 color: white
 decoration1: quart-circle-blue
 decoration2: square-salmon
+slot: 10
 
 intro: >
   Rachel is a web developer, speaker, and writer of a number of books including <a href="https://abookapart.com/products/get-ready-for-css-grid-layout">Get Ready for CSS Grid Layout</a> published by A Book Apart. She is an Invited Expert to the CSS Working Group, a Google Developer Expert and co-founder of <a href="https://grabaperch.com">Perch CMS</a>.
