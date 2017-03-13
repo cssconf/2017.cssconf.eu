@@ -13,7 +13,7 @@ decoration2: triangle-green
 slot: 14
 
 intro: >
-  Patricia Realini is a software engineer and an artist based in New York City, where she works at Bustle.
+  Patricia Realini is a software engineer and an artist based in New York City, where she works at <a href="http://meetfabric.com">Fabric</a>.
 
 links:
     - text: "@patriciarealini"
