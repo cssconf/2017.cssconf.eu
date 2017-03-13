@@ -25,6 +25,9 @@ links:
 ---
 
 <p>
-Mark has over 10 years of experience crafting UIs, and CSS developers might know him as the co-creator of CSS Modules and <a href="https://medium.com/@markdalgleish">writer of many articles</a> on CSS and related topics.
-In his hometown Melbourne, he runs the <a href="http://melbjs.com/">MelbJS</a> meetup, which brings local speakers and the interested frontend community together each month.
+Mark has over 10 years experience crafting UIs, and CSS developers might know him as the co-creator of
+<a href="https://github.com/css-modules/css-modules">CSS Modules</a> and writer of
+<a href="https://medium.com/@markdalgleish">many articles on CSS and related topics</a>. In his hometown Melbourne,
+he runs the <a href="http://melbjs.com/">MelbJS</a> meetup, which brings local speakers and the interested front end
+community together once a month.
 </p>
