@@ -8,8 +8,8 @@ lastname: Wu
 location: "San Francisco"
 bg: red
 color: white
-decoration1: circle-orange
-decoration2: triangle-green
+decoration1: diamond-green
+decoration2: start-blue-arc
 slot: 5
 
 intro: >

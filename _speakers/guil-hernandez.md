@@ -8,8 +8,8 @@ lastname: Hernandez
 location: Florida, US
 bg: mint
 color: white
-decoration1: triangle-plum
-decoration2: square-red
+decoration1: triangle2-plum
+decoration2: diamond-salmon
 slot: 13
 
 intro: >

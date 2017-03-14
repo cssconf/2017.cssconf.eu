@@ -9,7 +9,7 @@ location: "Vancouver, BC"
 bg: blue
 color: white
 decoration1: square-salmon
-decoration2: wave-red
+decoration2: wave-yolk
 slot: 7
 
 intro: >
@@ -22,4 +22,4 @@ links:
       url: "http://ivanamcconnell.com/"
 ---
 
-The definition of our profession is still unclear, and the stigma of “CSS is not REAL development” remains. In her talk at CSSconf EU '17,  Ivana McConnell will dissect how power dynamics and implicit hierarchies threaten to devalue the work we do, and how that hurts us both individually and as a community. 
+The definition of our profession is still unclear, and the stigma of “CSS is not REAL development” remains. In her talk at CSSconf EU '17,  Ivana McConnell will dissect how power dynamics and implicit hierarchies threaten to devalue the work we do, and how that hurts us both individually and as a community.

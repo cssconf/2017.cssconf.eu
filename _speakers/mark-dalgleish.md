@@ -8,8 +8,8 @@ lastname: Dalgleish
 location: "Melbourne"
 bg: rose
 color: white
-decoration1: half-pill-orange
-decoration2: quart-circle-blue
+decoration1: half-pill3-green
+decoration2: quart2-circle-blue
 slot: 9
 
 intro: >

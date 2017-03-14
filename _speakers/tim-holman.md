@@ -7,8 +7,8 @@ lastname: Holman
 location: New York, US
 bg: salmon
 color: white
-decoration1: circle-orange
-decoration2: triangle-mint
+decoration1: half-pill-blue
+decoration2: diamond-yellow
 slot: 1
 
 intro: >

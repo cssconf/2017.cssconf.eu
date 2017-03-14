@@ -8,8 +8,8 @@ lastname: Bremer
 location: "Amsterdam"
 bg: yolk
 color: white
-decoration1: circle-orange
-decoration2: triangle-green
+decoration1: quart-circle-blue
+decoration2: triangle-mint
 slot: 3
 
 intro: >

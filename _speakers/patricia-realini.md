@@ -8,7 +8,7 @@ lastname: Realini
 location: "Brooklyn, NY"
 bg: blue
 color: white
-decoration1: circle-orange
+decoration1: circle-yolk
 decoration2: triangle-green
 slot: 14
 

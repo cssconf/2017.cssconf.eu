@@ -8,8 +8,8 @@ lastname: Hamann
 location: "London, UK"
 bg: salmon
 color: white
-decoration1: circle-orange
-decoration2: triangle-green
+decoration1: start-tiny-triangle-blue
+decoration2: ring-mint
 slot: 8
 
 intro: >
