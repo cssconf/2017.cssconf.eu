@@ -6,7 +6,7 @@ layout: default
 {% assign talk = site.talks | where: "talk_id", speaker.talk_id | first %}
 <header class="header header--speaker bg--off-white">
   <div class="container">
-    <div class="speaker">
+    <div class="speaker speaker--{{ speaker.speaker_id }} ">
       <div class="speaker__text">
         <h1 class="speaker__name {{ speaker.bg | default:'blue' | prepend:'color--'}}">
           {% if speaker.firstname and speaker.lastname %}
@@ -20,9 +20,6 @@ layout: default
 
       {% assign decoration1 = speaker.decoration1 | default:"triangle-green" %}
       {% assign decoration2 = speaker.decoration2 | default:"circle-orange" %}
-      <!-- fixme: decorations per speaker need to be dynamic.
-        There are multiple sets of symbols and positionings. Which one to use
-        could either be configured or randomly chosen. -->
       <div class="speaker__image">
         <span class="speaker__shapes speaker__shapes--one-before">{% include helpers/svg id=decoration1 %}</span>
         {% include responsive-image
