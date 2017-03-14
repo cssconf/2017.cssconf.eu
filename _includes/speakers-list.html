@@ -7,7 +7,10 @@
       <div class="col-xs-12 col-sm-6 col-md-4">
         <a  href="{{ speaker.url | prepend: site.baseurl }}"
             class="box--slightly-padded bg--{{ speaker.bg }} color--{{ speaker.color }} speaker-item">
-          <h4 class="h2 mt2 mb1">{{ speaker.name }}</h4>
+          <h4 class="mb1 speaker-item__title">
+            {{ speaker.firstname }}<br>
+            {{ speaker.lastname }}
+          </h4>
           {{ speaker.location }}
         </a>
       </div>
