@@ -6,7 +6,7 @@ name: Rachel Andrew
 firstname: Rachel
 lastname: Andrew
 location: Bristol, UK
-bg: yolk
+bg: red
 color: white
 decoration1: quart-circle-blue
 decoration2: square-salmon

@@ -5,7 +5,7 @@ name: Tim Holman
 firstname: Tim
 lastname: Holman
 location: New York, US
-bg: rose
+bg: salmon
 color: white
 decoration1: circle-orange
 decoration2: triangle-mint

@@ -5,7 +5,7 @@ name: Jessica Lord
 firstname: Jessica
 lastname: Lord
 location: The Internet
-bg: plum
+bg: blue
 color: white
 decoration1: thumb-pink
 decoration2: triangle-yellow

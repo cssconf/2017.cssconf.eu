@@ -6,7 +6,7 @@ name: Mark Dalgleish
 firstname: Mark
 lastname: Dalgleish
 location: "Melbourne"
-bg: salmon
+bg: rose
 color: white
 decoration1: half-pill-orange
 decoration2: quart-circle-blue

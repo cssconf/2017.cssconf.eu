@@ -6,7 +6,7 @@ name: "Sareh Heidari"
 firstname: "Sareh"
 lastname: "Heidari"
 location: "London, UK"
-bg: plum
+bg: green
 color: white
 decoration1: circle-salmon
 decoration2: half-pill-orange
