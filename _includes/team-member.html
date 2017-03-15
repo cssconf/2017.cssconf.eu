@@ -1,7 +1,4 @@
 <li>
   <strong>{{ include.person.name }}</strong>,
-  {% for responsibility in include.person.responsibilities %}
-    {{ responsibility }},
-  {% endfor %}
   <a target="_blank" href="https://twitter.com/{{ include.person.twitter_handle }}">@{{ include.person.twitter_handle }}</a>
 </li>

@@ -1,36 +1,32 @@
-- name: Lewis Cowper
-  twitter_handle: LewisCowper
-  responsibilities:
-    - Code
+- name: Felicitas Kugland
+  twitter_handle: kotzendekrabbe
+
 - name: Lourdes Montano
   twitter_handle: louMontano
-  responsibilities:
-    - Code
+
 - name: Lucie Höhler
   twitter_handle: autofocus
-  responsibilities:
-    - Code
+
 - name: Lukasz Klis
   twitter_handle: lukaszklis
-  responsibilities:
-    - Code
+
 - name: Martin Schuhfuss
   twitter_handle: usefulthink
-  responsibilities:
-    - Code
+
+- name: Michael P. Pfeiffer
+  twitter_handle: m_p_pfeiffer
+
 - name: Nicolas Zimmel
   twitter_handle: toomanyclouds
-  responsibilities:
-    - Design
+
+- name: Ola Gasidlo
+  twitter_handle: misprintedtype
+
 - name: Sean Fridman
   twitter_handle: sfrdmn
-  responsibilities:
-    - Code
+
 - name: Simone Haas
   twitter_handle: haas_simone
-  responsibilities:
-    - Scholarships
+
 - name: Silke Voigts
   twitter_handle: silkine
-  responsibilities:
-    - Design
