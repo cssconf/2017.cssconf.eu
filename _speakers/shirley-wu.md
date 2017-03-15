@@ -13,7 +13,6 @@ decoration2: start-blue-arc
 slot: 5
 
 intro: >
-  TBD
 
 links:
     - text: "@sxywu"
@@ -23,5 +22,5 @@ links:
 ---
 
 <p>
-TBA
+What do a former astronomer and a software engineer have in common? A love for data visualization! Not a joke, but a real thing: Shirley, a developer who loves painting and Pixar animation, will team up with Nadieh Bremer(link), a data-viz designer with a background in astronomy. Together they will show us how to leverage web technologies like SVG and CSS to achieve stunning visualizations, and how their collaborative project Data sketches helped them to explore the possibilities.
 </p>

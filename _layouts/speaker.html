@@ -40,9 +40,11 @@ layout: default
         <div class="box">
           <article class="speaker">
             <ul class="speaker__info">
+              {% if speaker.intro %}
               <div class="speaker__bio">
                 <p class="intro">{{ speaker.intro | newline_to_br }}</p>
               </div>
+              {% endif %}
 
               <div class="speaker__content">
                 {{ speaker.content }}
