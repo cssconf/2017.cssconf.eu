@@ -5,10 +5,10 @@ name: Jessica Lord
 firstname: Jessica
 lastname: Lord
 location: The Internet
-bg: plum
+bg: blue
 color: white
-decoration1: thumb-pink
-decoration2: triangle-yellow
+decoration1: diamond-mint
+decoration2: ring-salmon
 slot: 2
 
 intro: >
