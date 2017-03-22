@@ -1,7 +1,7 @@
 ---
 speaker_id: shirley-wu
 role: speaker
-talk_id: data-sketches-a-visualization-month
+talk_id: data-sketches-a-visualization-a-month
 name: Shirley Wu
 firstname: Shirley
 lastname: Wu

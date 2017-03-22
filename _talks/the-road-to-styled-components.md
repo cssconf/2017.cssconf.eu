@@ -1,6 +1,5 @@
 ---
 talk_id: the-road-to-styled-components
-speaker_id: max-stoiber
 title: >
   The road to styled components: CSS in component-based systems
 ---

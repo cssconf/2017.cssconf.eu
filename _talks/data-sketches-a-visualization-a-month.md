@@ -1,6 +1,5 @@
 ---
-talk_id: data-sketches-a-visualization-month
-speaker-id: shirley-wu
+talk_id: data-sketches-a-visualization-a-month
 title: "data sketch|es: A Visualization a Month"
 ---
 

@@ -1,6 +1,5 @@
 ---
 talk_id: a-unified-styling-language
-speaker-id: mark-dalgleish
 title: A Unified Styling Language
 ---
 
