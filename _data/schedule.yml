@@ -1,6 +1,6 @@
 - type: registration
   title: "Doors Open and Breakfast"
-  start_time: "8:00"
+  start_time: "8:30"
 
 - type: opening-remarks
   title: "Opening Remarks"
@@ -39,42 +39,42 @@
 
 - type: talk
   talk_id: data-sketches-a-visualization-a-month
-  start_time: "14:15"
+  start_time: "14:20"
 
 - type: talk
   talk_id: a-unified-styling-language
-  start_time: "14:50"
+  start_time: "14:55"
 
 - type: talk
   talk_id: the-road-to-styled-components
-  start_time: "15:25"
+  start_time: "15:30"
 
 - type: coffee-break
   title: "Coffee Break"
-  start_time: "15:55"
+  start_time: "16:00"
 
 - type: talk
   talk_id: where-does-css-come-from
-  start_time: "16:25"
+  start_time: "16:30"
 
 - type: talk
   talk_id: get-ready-for-the-future-of-css
-  start_time: "17:00"
+  start_time: "17:05"
 
 - type: talk
   talk_id: lets-build-a-css-game
-  start_time: "17:35"
+  start_time: "17:40"
 
 - type: closing-remarks
   title: "Closing Remarks"
-  start_time: "18:25"
+  start_time: "18:10"
 
 - type: family-photo
   title: "Family Photo"
-  start_time: "18:35"
+  start_time: "18:20"
 
 - type: drinks
-  start_time: "18:45"
+  start_time: "18:30"
 
 - type: dinner
   start_time: "19:00"
