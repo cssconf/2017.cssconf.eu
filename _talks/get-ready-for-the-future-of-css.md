@@ -1,6 +1,5 @@
 ---
 talk_id: get-ready-for-the-future-of-css
-speaker-id: guil-hernandez
 title: Get Ready for the Future of CSS!
 ---
 

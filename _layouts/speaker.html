@@ -39,7 +39,7 @@ layout: default
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <div class="box">
           <article class="speaker">
-            <ul class="speaker__info">
+            <div class="speaker__info">
               {% if speaker.intro %}
               <div class="speaker__bio">
                 <p class="intro">{{ speaker.intro | newline_to_br }}</p>
@@ -51,9 +51,9 @@ layout: default
               </div>
 
               {% if talk %}
+              <a name="talk" class="local-anchor"></a>
               <div class="box bg--off-white speaker__talk-info">
                 <h2 class="{{ speaker.bg | default:'blue' | prepend:'color--'}}">{{ talk.title }}</h2>
-
                 {{ talk.content }}
               </div>
 

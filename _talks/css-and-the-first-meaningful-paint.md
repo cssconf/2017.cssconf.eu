@@ -1,6 +1,5 @@
 ---
 talk_id: css-and-the-first-meaningful-paint
-speaker-id: patrick-hamann
 title: "CSS and the first meaningful paint"
 ---
 

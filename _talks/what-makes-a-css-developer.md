@@ -1,6 +1,5 @@
 ---
 talk_id: what-makes-a-css-developer
-speaker_id: ivana-mc-connell
 title: >
   CSS and the hierarchy problem: What makes a CSS developer?
 ---

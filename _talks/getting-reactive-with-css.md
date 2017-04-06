@@ -1,6 +1,5 @@
 ---
 talk_id: getting-reactive-with-css
-speaker-id: david-khourshid
 title: Getting Reactive with CSS
 ---
 

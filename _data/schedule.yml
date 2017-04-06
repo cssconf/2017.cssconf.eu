@@ -1,77 +1,83 @@
 - type: registration
-  start_time: "8:00"
-  end_time: "9:45"
+  title: "Doors Open and Breakfast"
+  start_time: "8:30"
+
 - type: opening-remarks
+  title: "Opening Remarks"
   start_time: "9:45"
-  end_time: "9:50"
-- type: intro
+
+- type: talk
+  talk_id: intro
   start_time: "9:50"
-  end_time: "10:00"
+
 - type: talk
   talk_id: what-makes-a-css-developer
   start_time: "10:00"
-  end_time: "10:30"
+
 - type: talk
   talk_id: css-and-the-first-meaningful-paint
   start_time: "10:35"
-  end_time: "11:05"
-- type: coffee-break-1
+
+- type: coffee-break
+  title: "Coffee Break"
   start_time: "11:05"
-  end_time: "11:25"
+
 - type: talk
   talk_id: scaffolding-css-for-scale
   start_time: "11:25"
-  end_time: "11:55"
+
 - type: talk
-  talk_id: decoding-layout-through-the-ages
+  talk_id: css-art-history-101-decoding-layout-through-the-ages
   start_time: "12:00"
-  end_time: "12:30"
+
 - type: talk
   talk_id: getting-reactive-with-css
   start_time: "12:35"
-  end_time: "13:05"
+
 - type: lunch-break
   start_time: "13:05"
-  end_time: "14:15"
+
 - type: talk
   talk_id: data-sketches-a-visualization-a-month
-  start_time: "14:15"
-  end_time: "14:45"
+  start_time: "14:20"
+
 - type: talk
   talk_id: a-unified-styling-language
-  start_time: "14:50"
-  end_time: "15:20"
+  start_time: "14:55"
+
 - type: talk
   talk_id: the-road-to-styled-components
-  start_time: "15:25"
-  end_time: "15:55"
-- type: coffee-break-2
-  start_time: "15:55"
-  end_time: "16:25"
+  start_time: "15:30"
+
+- type: coffee-break
+  title: "Coffee Break"
+  start_time: "16:00"
+
 - type: talk
   talk_id: where-does-css-come-from
-  start_time: "16:25"
-  end_time: "16:55"
+  start_time: "16:30"
+
 - type: talk
   talk_id: get-ready-for-the-future-of-css
-  start_time: "17:00"
-  end_time: "17:30"
+  start_time: "17:05"
+
 - type: talk
   talk_id: lets-build-a-css-game
-  start_time: "17:35"
-  end_time: "18:20"
+  start_time: "17:40"
+
 - type: closing-remarks
-  start_time: "18:25"
-  end_time: "18:35"
+  title: "Closing Remarks"
+  start_time: "18:10"
+
 - type: family-photo
-  start_time: "18:35"
-  end_time: "18:45"
+  title: "Family Photo"
+  start_time: "18:20"
+
 - type: drinks
-  start_time: "18:45"
-  end_time: "19:00"
+  start_time: "18:30"
+
 - type: dinner
   start_time: "19:00"
-  end_time: "20:00"
+
 - type: party
   start_time: "20:00"
-  end_time: "0:00"

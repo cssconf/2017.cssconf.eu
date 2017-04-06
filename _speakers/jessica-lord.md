@@ -1,5 +1,6 @@
 ---
 speaker_id: jessica-lord
+talk_id: intro
 role: moderator
 name: Jessica Lord
 firstname: Jessica

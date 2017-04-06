@@ -1,23 +1,62 @@
 ---
-layout: subpage
+layout: subpage-wide
 page_id: schedule
 title: "Schedule"
-subtitle: "Nothing to see here yet :)"
 permalink: /schedule/
 ---
 
-<!--
-<ul>
+<ol class="c-schedule">
   {% for slot in site.data.schedule %}
-    <li>
-      {% if slot.type == "talk" %}
-        {% assign talk = site.talks | where: "talk_id", slot.talk_id | first %}
-        {% assign speaker = site.speakers | where: "speaker_id", talk.speaker_id | first %}
-        <a href="{{ speaker.url | prepend: site.baseurl }}">{{ talk.title }}</a>
-      {% else %}
-        <span>{{ slot.type | capitalize }}</span>
-      {% endif %}
+    {% assign firstSpeaker = site.speakers | where: "talk_id", slot.talk_id | last %}
+    <li class="c-schedule__item">
+      <div class="c-schedule-item c-schedule-item--{{ slot.type }} {% if firstSpeaker %}c-schedule-item--{{ firstSpeaker.bg }}{% endif %}">
+        <time class="tac c-schedule-item__time">
+          {{ slot.start_time }}
+        </time>
+
+        {% if slot.type == "talk" %}
+          {% assign talk = site.talks | where: "talk_id", slot.talk_id | first %}
+          {% assign speakers = site.speakers | where: "talk_id", slot.talk_id %}
+          <h2 class="c-schedule-item__title">
+            {% for speaker in speakers %}
+              {% if forloop.index != 1 %}&{% endif %}
+              {{ speaker.name }}
+            {% endfor %}
+          </h2>
+
+          {% if talk.title %}
+            <p class="tac">
+              <a href="{{ firstSpeaker.url }}#talk">{{ talk.title }}</a>
+            </p>
+          {% endif %}
+
+          <div class="c-schedule-item__photos">
+            {% for speaker in speakers %}
+              {% include responsive-image
+                width=84 height=102
+                path="/assets/images/speakers"
+                basename=speaker.speaker_id
+                srcset="small.jpg 1x, medium.jpg 2x" %}
+            {% endfor %}
+          </div>
+
+          <ul class="tac c-schedule-item__links">
+            {% for speaker in speakers %}
+              <li class="c-schedule-item__link">
+                <a href="{{ speaker.url | prepend: site.baseurl }}">Learn more about {{ speaker.firstname }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <h2 class="c-schedule-item__title">
+            {% if slot.title %}
+              {{ slot.title }}
+            {% else %}
+              {{ slot.type | capitalize }}
+            {% endif %}
+          </h2>
+        {% endif %}
+      </div>
     </li>
-    {% endfor %}
-</ul>
--->
+  {% endfor %}
+</ol>

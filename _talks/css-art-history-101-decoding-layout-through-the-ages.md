@@ -1,6 +1,5 @@
 ---
 talk_id: css-art-history-101-decoding-layout-through-the-ages
-speaker-id: patricia-realini
 title: "CSS Art History 101: Decoding Layout Through The Ages"
 ---
 

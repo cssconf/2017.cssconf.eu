@@ -1,6 +1,5 @@
 ---
 talk_id: lets-build-a-css-game
-speaker_id: una-kravets
 title: Let's Build a CSS Game
 ---
 

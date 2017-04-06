@@ -1,6 +1,5 @@
 ---
 talk_id: where-does-css-come-from
-speaker_id: rachel-andrew
 title: >
   Where does CSS come from?
 ---

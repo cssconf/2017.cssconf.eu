@@ -1,6 +1,5 @@
 ---
 talk_id: scaffolding-css-for-scale
-speaker_id: sareh-heidari
 title: >
   Scaffolding CSS for Scale
 ---

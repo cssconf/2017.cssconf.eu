@@ -1,7 +1,7 @@
 ---
 speaker_id: nadieh-bremer
 role: speaker
-talk_id: data-sketches-a-visualization-month
+talk_id: data-sketches-a-visualization-a-month
 name: Nadieh Bremer
 firstname: Nadieh
 lastname: Bremer
