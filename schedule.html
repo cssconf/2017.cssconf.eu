@@ -25,7 +25,9 @@ permalink: /schedule/
           </h2>
 
           {% if talk.title %}
-            <p class="tac">{{ talk.title }}</p>
+            <p class="tac">
+              <a href="{{ firstSpeaker.url }}#talk">{{ talk.title }}</a>
+            </p>
           {% endif %}
 
           <div class="c-schedule-item__photos">
