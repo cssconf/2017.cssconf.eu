@@ -14,8 +14,20 @@ permalink: /sponsors/
 <section>
   <div class="container">
     <div class="row row--bottom-margin center-xs">
-      {% for sponsor in site.data.sponsors2017 %}
-      <div class="col-xs-6 col-sm-4">
+      {% for sponsor in site.data.sponsors2017.main %}
+      <div class="col-xs-12 col-sm-8 col-md-6">
+        <div class="bg--off-white box--padded box--sponsor">
+          <a href="{{ sponsor.url }}">
+            {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row row--bottom-margin center-xs">
+      {% for sponsor in site.data.sponsors2017.other %}
+      <div class="col-xs-6 col-md-4">
         <div class="bg--off-white box--padded box--sponsor">
           <a href="{{ sponsor.url }}">
             {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
@@ -35,9 +47,9 @@ permalink: /sponsors/
     <p>
       We are currently looking for media partners. Run a magazine, blog, podcast, newsletter? Contact us at <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a> for options.
     </p>
-    <div class="row">
+    <div class="row row--bottom-margin center-xs">
       {% for partner in site.data.media_partners2017 %}
-      <div class="col-xs-6 col-sm-4">
+      <div class="col-xs-6 col-md-4">
         <div class="bg--off-white box--padded box--sponsor">
           <a href="{{ partner.url }}">
             {% include helpers/svg id=partner.logoId viewBox="0 0 16 10" %}

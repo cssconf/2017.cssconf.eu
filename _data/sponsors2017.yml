@@ -1,18 +1,30 @@
--
-  url: https://sinnerschrader.com/en/
-  logoId: logo-sinnerschrader
--
-  url: https://www.mozilla.com/
-  logoId: logo-mozilla
--
-  url: https://www.host1plus.com/
-  logoId: logo-host1plus
--
-  url: https://www.shopify.com/
-  logoId: logo-shopify
--
-  url: https://www.contentful.com/
-  logoId: logo-contentful
--
-  url: http://www.springernature.com/
-  logoId: logo-springernature
+main:
+  -
+    url: https://sinnerschrader.com/en/
+    logoId: logo-sinnerschrader
+  -
+    url: http://www.technology-ebay.de/
+    logoId: logo-ebay-tech
+#  -
+#    url: http://www.mobile.de/
+#    logoId: logo-mobilede
+
+other:
+  -
+    url: https://www.mozilla.com/
+    logoId: logo-mozilla
+  -
+    url: https://google.com
+    logoId: logo-google
+  -
+    url: https://www.host1plus.com/
+    logoId: logo-host1plus
+  -
+    url: https://www.shopify.com/
+    logoId: logo-shopify
+  -
+    url: https://www.contentful.com/
+    logoId: logo-contentful
+  -
+    url: http://www.springernature.com/
+    logoId: logo-springernature
