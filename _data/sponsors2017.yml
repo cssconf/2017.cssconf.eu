@@ -28,3 +28,6 @@ other:
   -
     url: http://www.springernature.com/
     logoId: logo-springernature
+  -
+    url: https://www.dawanda.com/
+    logoId: logo-dawanda
