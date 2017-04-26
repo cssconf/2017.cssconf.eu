@@ -17,6 +17,9 @@ other:
     url: https://google.com
     logoId: logo-google
   -
+    url: https://www.twilio.com
+    logoId: logo-twilio
+  -
     url: https://www.host1plus.com/
     logoId: logo-host1plus
   -
