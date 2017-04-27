@@ -1,9 +1,9 @@
 # Website for CSSconf EU 2017
 
-0. [Adding and editing content](#content-editing)
-0. [Run locally](#run-locally)
-0. [Development](#development)
-0. [Deployment](#deployment)
+1. [Adding and editing content](#content-editing)
+1. [Run locally](#run-locally)
+1. [Development](#development)
+1. [Deployment](#deployment)
 
 # Content editing
 
@@ -97,33 +97,13 @@ Follow the installation instructions on [nodejs.org](https://nodejs.org)
 
 Once you install Node, run `npm install`
 
-# CSSconf 2017 Sponsorship Document
-
-## Installation
-
-Clone project via `git clone`
-
-Change into new project directory `cd 2017-cssconfeu-sponsorship`
-
-Run `bundle install` (in case you have not installed bundler yet `gem install bundler`).
-
-Run `npm install`
-
-Run `npm start`
-
-View the site on `localhost:2017`
-
-## Editing Content
-
-For creating new sponsorship offers, check out [the README in offers/](offers/)
-
-## Development
+# Development
 
 Run a dev server with `npm start`
 
 The site is built using Jekyll.
 
-### Use and update assets
+## Use and update assets
 
 Some assets, including most all CSS, are located in a separate repo (2017-assets) and loaded as a dependency. That means if you need to make CSS changes you’ll need to make your edits there.
 
@@ -132,17 +112,17 @@ use `npm link` to always grab the latest CSS from your local clone. Just clone t
 
 *Note*: If you use `npm link` you may start seeing a bunch of warnings whenever you run `npm install`. Seems to be a bug in NPM? Don’t worry about it!
 
-### Troubleshooting
+## Troubleshooting
 
 Not seeing your changes render on the site? Deleting your `node_modules/` folder and re-running `npm install` and or deleting the Jekyll output folder `_site` sometimes works wonders.
 
-### SVG
+## SVG
 
 There’s a helper component to make including an SVG as simple as this:
 `{% include helpers/svg id="circle" %}`
 The id must be the file-name of any svg inside the svg folder in assets. The output will be an inlined SVG, meaning it can be styled and animated with CSS.
 
-### Publishing
+# Deployment
 
 To publish in production, have your changes merged into `gh-pages` on `cssconfeu/2017.cssconf.eu`
 
