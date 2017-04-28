@@ -47,7 +47,7 @@
         </label>
       </div>
       <ul class="mobile-menu__links">
-        {% for pageId in site.data.main_nav %}
+        {% for pageId in site.data.main_nav_mobile %}
           <li class="mobile-menu__links-item">
             {% assign linkedPage = site.pages | where: "page_id", pageId | first %}
             <a href="{{ linkedPage.permalink }}" class="mobile-menu__link">{{ linkedPage.title }}</a>
