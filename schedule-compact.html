@@ -1,0 +1,46 @@
+---
+layout: subpage-wide
+page_id: schedule
+title: "Schedule"
+permalink: /schedule-compact/
+---
+
+<ol class="c-schedule c-schedule--compact">
+  {% for slot in site.data.schedule %}
+    {% assign firstSpeaker = site.speakers | where: "talk_id", slot.talk_id | last %}
+    <li class="c-schedule__item">
+      <div class="c-schedule-item c-schedule-item--compact c-schedule-item--{{ slot.type }} {% if firstSpeaker %}c-schedule-item--{{ firstSpeaker.bg }}{% endif %}">
+        <time class="tac c-schedule-item__time">
+          {{ slot.start_time }}
+        </time>
+
+        <div class="c-schedule-item__content">
+          {% if slot.type == "talk" %}
+            {% assign talk = site.talks | where: "talk_id", slot.talk_id | first %}
+            {% assign speakers = site.speakers | where: "talk_id", slot.talk_id %}
+            <h2 class="c-schedule-item__title">
+              {% for speaker in speakers %}
+                {% if forloop.index != 1 %}&{% endif %}
+                {{ speaker.name }}
+              {% endfor %}
+            </h2>
+
+            {% if talk.title %}
+              <p class="c-schedule-item__text">
+                <a href="{{ firstSpeaker.url }}#talk">{{ talk.title }}</a>
+              </p>
+            {% endif %}
+          {% else %}
+            <h2 class="c-schedule-item__title">
+              {% if slot.title %}
+                {{ slot.title }}
+              {% else %}
+                {{ slot.type | capitalize }}
+              {% endif %}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ol>
