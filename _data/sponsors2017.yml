@@ -5,11 +5,8 @@ main:
   -
     url: http://www.technology-ebay.de/
     logoId: logo-ebay-tech
-#  -
-#    url: http://www.mobile.de/
-#    logoId: logo-mobilede
 
-other:
+supporting:
   -
     url: https://www.mozilla.com/
     logoId: logo-mozilla
@@ -19,6 +16,11 @@ other:
   -
     url: https://www.twilio.com
     logoId: logo-twilio
+  -
+    url: https://www.cloudflare.com
+    logoId: logo-cloudflare
+
+community:
   -
     url: https://www.host1plus.com/
     logoId: logo-host1plus
@@ -34,3 +36,14 @@ other:
   -
     url: https://www.dawanda.com/
     logoId: logo-dawanda
+  -
+    url: https://alletravel.co/
+    logoId: logo-alle
+
+travel:
+  -
+    url: https://www.bbc.com/
+    logoId: logo-bbc-news
+  -
+    url: https://www.fastly.com/
+    logoId: logo-fastly
