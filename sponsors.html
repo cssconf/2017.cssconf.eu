@@ -13,20 +13,54 @@ permalink: /sponsors/
 
 <section>
   <div class="container">
-    <div class="row row--bottom-margin center-xs">
-      {% for sponsor in site.data.sponsors2017.main %}
-      <div class="col-xs-12 col-sm-8 col-md-6">
-        <div class="bg--off-white box--padded box--sponsor">
-          <a href="{{ sponsor.url }}" rel="nofollow">
-            {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
-          </a>
+    <div class="pb1">
+      <h2 class="tac">Main Sponsors</h2>
+      <div class="row row--bottom-margin center-xs">
+        {% for sponsor in site.data.sponsors2017.main %}
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <div class="bg--off-white box--padded box--sponsor">
+            <a href="{{ sponsor.url }}" rel="nofollow">
+              {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
+            </a>
+          </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
+    <div class="pb1">
+      <h2 class="tac">Supporting Sponsors</h2>
+      <div class="row row--bottom-margin center-xs">
+        {% for sponsor in site.data.sponsors2017.supporting %}
+        <div class="col-xs-6 col-md-4">
+          <div class="bg--off-white box--padded box--sponsor">
+            <a href="{{ sponsor.url }}">
+              {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="pb1">
+      <h2 class="tac">Community Sponsors</h2>
+      <div class="row row--bottom-margin center-xs">
+        {% for sponsor in site.data.sponsors2017.community %}
+        <div class="col-xs-6 col-md-4">
+          <div class="bg--off-white box--padded box--sponsor">
+            <a href="{{ sponsor.url }}">
+              {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <h2 class="tac">Thanks for supporting speaker travel:</h2>
     <div class="row row--bottom-margin center-xs">
-      {% for sponsor in site.data.sponsors2017.other %}
+      {% for sponsor in site.data.sponsors2017.travel %}
       <div class="col-xs-6 col-md-4">
         <div class="bg--off-white box--padded box--sponsor">
           <a href="{{ sponsor.url }}">
