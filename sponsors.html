@@ -17,7 +17,7 @@ permalink: /sponsors/
       {% for sponsor in site.data.sponsors2017.main %}
       <div class="col-xs-12 col-sm-8 col-md-6">
         <div class="bg--off-white box--padded box--sponsor">
-          <a href="{{ sponsor.url }}">
+          <a href="{{ sponsor.url }}" rel="nofollow">
             {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
           </a>
         </div>
