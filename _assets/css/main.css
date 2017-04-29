@@ -1,5 +1,11 @@
 @import '2017-assets';
 
+/* speakers-guide tweak */
+
+#page-speakers-guide section:nth-child(even) {
+  background-color: var(--color-off-white);
+}
+
 /* sticky footer */
 
 .sticky-footer-container {
