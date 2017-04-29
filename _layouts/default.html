@@ -29,7 +29,10 @@
 
   {% include top-bar.html %}
 
-  <div class="sticky-footer-container__content">
+  <div
+    id="{% if page.page_id%}page-{{page.page_id}}{% endif %}"
+    class="sticky-footer-container__content"
+  >
     {{ content }}
   </div>
 
