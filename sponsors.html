@@ -34,7 +34,7 @@ permalink: /sponsors/
         {% for sponsor in site.data.sponsors2017.supporting %}
         <div class="col-xs-6 col-md-4">
           <div class="bg--off-white box--padded box--sponsor">
-            <a href="{{ sponsor.url }}">
+            <a href="{{ sponsor.url }}" rel="nofollow">
               {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
             </a>
           </div>
@@ -49,7 +49,7 @@ permalink: /sponsors/
         {% for sponsor in site.data.sponsors2017.community %}
         <div class="col-xs-6 col-md-4">
           <div class="bg--off-white box--padded box--sponsor">
-            <a href="{{ sponsor.url }}">
+            <a href="{{ sponsor.url }}" rel="nofollow">
               {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
             </a>
           </div>
@@ -63,7 +63,7 @@ permalink: /sponsors/
       {% for sponsor in site.data.sponsors2017.travel %}
       <div class="col-xs-6 col-md-4">
         <div class="bg--off-white box--padded box--sponsor">
-          <a href="{{ sponsor.url }}">
+          <a href="{{ sponsor.url }}" rel="nofollow">
             {% include helpers/svg id=sponsor.logoId viewBox="0 0 16 10" %}
           </a>
         </div>
