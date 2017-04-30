@@ -1,6 +1,6 @@
 ---
 talk_id: lets-build-a-css-game
-title: Let's Build a CSS Game
+title: Let’s Build a CSS Game
 ---
 
 <p>Let’s live code a game together using just CSS and HTML! This talk will

@@ -32,7 +32,7 @@ defaults:
     values:
       layout: speaker
 
-# Don't build Gulp and Node stuff
+# Don’t build Gulp and Node stuff
 exclude:
   - "*README.md"
   - "*.sh"

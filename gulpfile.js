@@ -96,7 +96,7 @@ gulp.task('svg:sprite', function () {
       'node_modules/2017-assets/svg/**/*.svg'
     ])
     .pipe(svgmin(function (file) {
-      // Prefix IDs within each SVG so that they won't conflict
+      // Prefix IDs within each SVG so that they won’t conflict
       // when we smash everything together as a sprite
       var prefix = path.basename(file.relative, path.extname(file.relative));
       return {

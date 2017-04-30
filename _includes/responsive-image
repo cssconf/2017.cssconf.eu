@@ -1,6 +1,6 @@
 {% comment %}
    Helper include to generate markup for responsive images.
-   We can't write custom filters on gh-pages, so we have to do this nastiness.
+   We can’t write custom filters on gh-pages, so we have to do this nastiness.
    As parameters, takes the path to the image directory, the base name of the image, and the srcset written without the path and basename
 {% endcomment %}
 {% assign path = include.path %}

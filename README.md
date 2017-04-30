@@ -28,11 +28,11 @@ The following instructions apply to adding / editing talks, speakers, and sponso
   1. Copy the data from an existing `.md` file
   2. In the parent folder, click `Create new file`
   3. Paste the data into GitHub and edit _OR_ paste it in an [online YAML editor](https://nodeca.github.io/js-yaml/) (helps avoid syntax errors, but you gotta paste it in without the enclosing `---`)
-  4. Edit to your heart's content!
+  4. Edit to your heart’s content!
      - The filename you choose may determine the content page URL
      - The `blabla_id` property can be the same as the filename
   5. When finished, fill in a commit description and select `Create a new branch for this commit and start a pull request`.
-     - (If it's a small change not likely to break anything, you might consider skipping the pull request and just committing directly)
+     - (If it’s a small change not likely to break anything, you might consider skipping the pull request and just committing directly)
   6. Wait to see if the created pull request passes the build. If it does, click merge and your changes will be live
 
 # Run locally
