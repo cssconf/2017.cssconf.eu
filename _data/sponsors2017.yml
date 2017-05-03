@@ -47,6 +47,6 @@ travel:
   -
     url: https://www.bbc.com/
     logoId: logo-bbc-news
-#  -
-#    url: https://www.fastly.com/
-#    logoId: logo-fastly
+  -
+    url: https://www.fastly.com/
+    logoId: logo-fastly
