@@ -1,5 +1,30 @@
 @import '2017-assets';
 
+/* spinning emoji next to schedule button */
+
+@keyframes happy-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.link__icon--party-thing {
+  position: relative;
+  left: 5px;
+  animation-name: happy-spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  padding-right: 5px; /* fix for cut-off emoji on non-retina displays */
+  animation-play-state: paused;
+}
+
+.link--animated:hover .link__icon--party-thing {
+  animation-play-state: running;
+}
+
 /* speakers-guide tweak */
 
 #page-speakers-guide section:nth-child(even) {
