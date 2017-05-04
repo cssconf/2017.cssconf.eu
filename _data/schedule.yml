@@ -27,7 +27,7 @@
   start_time: "11:25"
 
 - type: talk
-  talk_id: css-art-history-101-decoding-layout-through-the-ages
+  talk_id: where-does-css-come-from
   start_time: "12:00"
 
 - type: talk
@@ -54,7 +54,7 @@
   start_time: "16:00"
 
 - type: talk
-  talk_id: where-does-css-come-from
+  talk_id: css-art-history-101-decoding-layout-through-the-ages
   start_time: "16:30"
 
 - type: talk
