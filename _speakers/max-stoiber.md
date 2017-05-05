@@ -5,6 +5,7 @@ talk_id: the-road-to-styled-components
 name: Max Stoiber
 firstname: Max
 lastname: Stoiber
+replacement: Glen Maddern
 location: Vienna, AT
 bg: green
 color: white

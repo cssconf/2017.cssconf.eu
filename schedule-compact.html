@@ -18,10 +18,18 @@ permalink: /schedule-compact/
           {% if slot.type == "talk" %}
             {% assign talk = site.talks | where: "talk_id", slot.talk_id | first %}
             {% assign speakers = site.speakers | where: "talk_id", slot.talk_id %}
+
+           {% comment %}
+             Here we have a little hackiness to add markup for our replacement speaker
+           {% endcomment %}
             <h2 class="c-schedule-item__title">
               {% for speaker in speakers %}
-                {% if forloop.index != 1 %}&{% endif %}
+              {% if forloop.index != 1 %}&{% endif %}
+              {% if speaker.replacement %}
+                <s>{{ speaker.name }}</s> {{speaker.replacement}}
+              {% else %}
                 {{ speaker.name }}
+              {% endif %}
               {% endfor %}
             </h2>
 
