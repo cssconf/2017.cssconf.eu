@@ -24,6 +24,8 @@ collections:
     output: false
   sponsors:
     output: false
+  transcripts:
+    output: true
 
 defaults:
   - scope:
@@ -31,6 +33,12 @@ defaults:
       type: speakers
     values:
       layout: speaker
+  - scope:
+      path: ""
+      type: transcripts
+    values:
+      # Transcripts will be output as raw txt files
+      layout: null
 
 # Don’t build Gulp and Node stuff
 exclude:
